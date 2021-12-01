@@ -903,7 +903,7 @@ class FunkinLua {
 		});
 		Lua_helper.add_callback(lua, "startVideo", function(videoFile:String) {
 			#if VIDEOS_ALLOWED
-			if(OpenFlAssets.exists(Paths.video(videoFile))) 
+			if(OpenFlAssets.exists("assets/videos/" + videoFile + ".webm")) 
 			{
 				lePlayState.startVideo(videoFile);
 			} 
