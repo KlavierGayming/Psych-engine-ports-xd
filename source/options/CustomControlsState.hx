@@ -60,7 +60,7 @@ class CustomControlsState extends MusicBeatSubstate
 		
 
 		//pad
-		_pad = new FlxVirtualPad(RIGHT_FULL, NONE);
+		_pad = new FlxVirtualPad(RIGHT_FULL_BLOCK, NONE);
 		_pad.alpha = 0;
 		
 
@@ -350,7 +350,7 @@ class CustomControlsState extends MusicBeatSubstate
 
 	function loadcustom():Void{
 		//load pad
-		_pad = config.loadcustom(_pad);	
+		_pad = config.loadcustom(_pad, true);
 	
 	}
 

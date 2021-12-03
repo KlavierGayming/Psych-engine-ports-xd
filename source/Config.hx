@@ -151,13 +151,15 @@ class Config {
 		save.flush();
 	}
 
-	public function loadcustom(_pad:FlxVirtualPad):FlxVirtualPad {
+	public function loadcustom(_pad:FlxVirtualPad, deez:Bool):FlxVirtualPad {
 		//load pad
 		if (save.data.buttons == null) return _pad;
 		var tempCount:Int = 0;
 
 		for(buttons in _pad)
 		{
+			if (tempCount == 2 && !deez)
+				tempCount++;
 			buttons.x = save.data.buttons[tempCount].x;
 			buttons.y = save.data.buttons[tempCount].y;
 			tempCount++;
