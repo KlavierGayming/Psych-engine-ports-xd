@@ -1,24 +1,3 @@
-local allowCountdown = false
-local y = 50
-local motherfucking = 0
-local the = 0
-local t = 0
--- stolen from bbpanzu fUCK YOU! - aflac
-local u = false;
-local r = 0;
-local shot = false;
-local agent = 1
-local health = 0;
-local xx = 190;
-local yy = 800;
-local xx2 = 732.9;
-local yy2 = 800;
-local ofs = 50;
-local followchars = true;
-local del = 0;
-local del2 = 0;
-local drain = 0.01 -- the funne
-
 function onUpdate()
 	if followchars == true then
         if mustHitSection == false then
@@ -31,8 +10,6 @@ function onUpdate()
 end
 
 function onCreate()
-
-	-- background shitb
 	math.randomseed(os.clock() * 1000);
 	makeLuaSprite('bg', 'background/endbg', -600, -350);
 	setScrollFactor('bg', 0, 0);
