@@ -1,4 +1,5 @@
 function onCreate()
+	quickPrint("Creating")
 	makeLuaSprite('bg', 'background/endbg', -600, -350);
 	setScrollFactor('bg', 0, 0);
 	scaleObject('bg', 3, 3);
@@ -44,7 +45,7 @@ function onCreate()
 	addLuaSprite('lay', false);
 	addLuaSprite('max',false)
 	addLuaSprite('kofv',false)
-	
+	quickPrint("end of creating");
 end
 function onBeatHit()
 	objectPlayAnimation('core', 'bop', true)
@@ -68,7 +69,7 @@ function onEvent(name,value1,value2) -- value 1 and value 2 are not needed here 
 				doTweenX('endship','ship',-1000,float(4,7),'linear') -- woosh
 		end
 		-- math.random sucks penis  xdddd
-		
+		quickPrint('pain');
 	end
 end
 
@@ -104,6 +105,7 @@ end
 
 
 function int(Min, Max)
+	quickPrint("deez nuts")
 	-- Random interger function
 	-- Checks if min is 0 and max is the maximum interger, if it is, then it'll return an entire random interger with no boundaries
     if Min == 0 and Max == MODULUS then
