@@ -55,19 +55,19 @@ function onBeatHit()
 end
 function onEvent(name,value1,value2) -- value 1 and value 2 are not needed here but ig its fine to keep them
 	if name == 'End Ship' then
-		local scale = math.random(0.3,0.35)
+		local scale = float(0.3,0.35)
 		scaleObject('ship', scale, scale);
-		setProperty('ship.y',math.random(-150,150)) -- 
-		if math.random(0,1) == 1 then
+		setProperty('ship.y', int(-150,150)) -- 
+		if bool(50) then
 			setProperty('ship.x',-1000)
 			setProperty('ship.flipX',false)  -- thanks shado mario
-		doTweenX('endship','ship',3000,math.random(4,7),'linear') -- woosh
+		doTweenX('endship','ship',3000,float(4,7),'linear') -- woosh
 		else
 				setProperty('ship.x',3000)
 				setProperty('ship.flipX',true) -- thank shado mar
-				doTweenX('endship','ship',-1000,math.random(4,7),'linear') -- woosh
+				doTweenX('endship','ship',-1000,float(4,7),'linear') -- woosh
 		end
-		
+		-- math.random sucks penis  xdddd
 		
 	end
 end
@@ -81,4 +81,71 @@ function onUpdate()
         end
    
     end
+end
+
+
+MODULUS = 0;
+s=0;
+-- HAHA YES, MATH BEING TOTALLY STUPID SO I HAVE TO MAKE MY OWN LUA RANDOMIZER!
+function onCreate()
+    s = getPropertyFromClass('FlxMath', 'MAX_VALUE_INT')
+    MODULUS = s;   
+end
+
+
+internalSeed = 1;
+MULTIPLIER = 48271.0
+
+function generate()
+    internalSeed = (internalSeed * MULTIPLIER) % MODULUS 
+    return internalSeed
+end
+
+
+
+function int(Min, Max)
+	-- Random interger function
+	-- Checks if min is 0 and max is the maximum interger, if it is, then it'll return an entire random interger with no boundaries
+    if Min == 0 and Max == MODULUS then
+        return math.floor(generate());
+    elseif Min == Max then -- If min and max are equal, it returns the minimum value
+        return Min;
+    else
+		-- if min is higher then max, the values get swapped
+        if Min > Max then
+			local i = Min
+            Min = Max
+            Max = i
+        end
+
+        local result = 0
+        -- generates a random float that gets rounded
+        result = math.floor(Min + generate() / MODULUS * (Max - Min + 1))
+
+        return result;
+    end
+end
+
+function float(Min, Max)
+    if Min == 0 and Max == 1 then
+        return generate() / MODULUS;
+    elseif Min == Max then
+        return Min;
+    else
+        if Min > Max then
+            Min = Min + Max
+            Max = Min - Max
+            Min = Min - Max
+        end
+
+        local result = 0
+        
+        result = Min + generate() / MODULUS * (Max - Min + 1)
+
+        return result;
+    end
+end
+
+function bool(chance)
+    return float(0, 100) < chance;
 end
