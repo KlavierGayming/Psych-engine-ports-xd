@@ -1,5 +1,4 @@
 function onCreate()
-	math.randomseed(os.clock() * 1000);
 	makeLuaSprite('bg', 'background/endbg', -600, -350);
 	setScrollFactor('bg', 0, 0);
 	scaleObject('bg', 3, 3);
