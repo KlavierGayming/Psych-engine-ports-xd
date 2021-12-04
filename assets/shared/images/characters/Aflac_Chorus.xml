@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Aflac_Chorus.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Cataflac_Down0000" x="0" y="0" width="405" height="609" frameX="0" frameY="-48" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0001" x="433" y="0" width="405" height="611" frameX="0" frameY="-46" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0002" x="866" y="0" width="404" height="616" frameX="-1" frameY="-41" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0003" x="1298" y="0" width="404" height="624" frameX="-1" frameY="-33" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0004" x="1730" y="0" width="403" height="635" frameX="-2" frameY="-22" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0005" x="2161" y="0" width="401" height="645" frameX="-4" frameY="-12" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0006" x="2590" y="0" width="401" height="652" frameX="-4" frameY="-5" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0007" x="3019" y="0" width="399" height="656" frameX="-5" frameY="-1" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0008" x="3446" y="0" width="399" height="657" frameX="-5" frameY="0" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0009" x="3873" y="0" width="399" height="657" frameX="-5" frameY="0" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0010" x="4300" y="0" width="399" height="656" frameX="-5" frameY="-1" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0011" x="4727" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0012" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0013" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0014" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0015" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0016" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0017" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0018" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0019" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0020" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0021" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0022" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0023" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0024" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0025" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0026" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0027" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0028" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Down0029" x="5154" y="0" width="399" height="654" frameX="-5" frameY="-3" frameWidth="405" frameHeight="657"/>
+	<SubTexture name="Cataflac_Left0000" x="5581" y="0" width="466" height="674" frameX="0" frameY="0" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0001" x="6075" y="0" width="465" height="673" frameX="-1" frameY="-1" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0002" x="6568" y="0" width="465" height="672" frameX="-2" frameY="-2" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0003" x="7061" y="0" width="461" height="669" frameX="-6" frameY="-5" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0004" x="7550" y="0" width="455" height="666" frameX="-13" frameY="-9" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0005" x="0" y="702" width="447" height="664" frameX="-21" frameY="-12" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0006" x="475" y="702" width="441" height="665" frameX="-28" frameY="-11" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0007" x="944" y="702" width="436" height="666" frameX="-33" frameY="-10" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0008" x="1408" y="702" width="435" height="668" frameX="-34" frameY="-9" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0009" x="1871" y="702" width="435" height="668" frameX="-34" frameY="-9" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0010" x="2334" y="702" width="435" height="669" frameX="-34" frameY="-8" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0011" x="2797" y="702" width="436" height="670" frameX="-33" frameY="-7" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0012" x="3261" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0013" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0014" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0015" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0016" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0017" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0018" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0019" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0020" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0021" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0022" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0023" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0024" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0025" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0026" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0027" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Left0028" x="3725" y="702" width="436" height="671" frameX="-33" frameY="-6" frameWidth="469" frameHeight="677"/>
+	<SubTexture name="Cataflac_Right0000" x="4189" y="702" width="464" height="660" frameX="-5" frameY="-15" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0001" x="4681" y="702" width="463" height="662" frameX="-5" frameY="-14" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0002" x="5172" y="702" width="462" height="664" frameX="-4" frameY="-12" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0003" x="5662" y="702" width="458" height="666" frameX="-4" frameY="-10" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0004" x="6148" y="702" width="454" height="668" frameX="-3" frameY="-8" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0005" x="6630" y="702" width="449" height="669" frameX="-2" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0006" x="7107" y="702" width="446" height="672" frameX="-1" frameY="-4" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0007" x="7581" y="702" width="444" height="675" frameX="-1" frameY="-1" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0008" x="0" y="1405" width="444" height="676" frameX="0" frameY="0" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0009" x="472" y="1405" width="444" height="676" frameX="0" frameY="0" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0010" x="944" y="1405" width="444" height="673" frameX="0" frameY="-3" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0011" x="1416" y="1405" width="444" height="670" frameX="0" frameY="-6" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0012" x="1888" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0013" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0014" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0015" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0016" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0017" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0018" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0019" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0020" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0021" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0022" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0023" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0024" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0025" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0026" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0027" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0028" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Right0029" x="2360" y="1405" width="444" height="669" frameX="0" frameY="-7" frameWidth="469" frameHeight="676"/>
+	<SubTexture name="Cataflac_Up0000" x="2832" y="1405" width="447" height="717" frameX="-2" frameY="0" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0001" x="3307" y="1405" width="448" height="716" frameX="-2" frameY="-1" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0002" x="3783" y="1405" width="449" height="714" frameX="-1" frameY="-3" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0003" x="4260" y="1405" width="452" height="709" frameX="0" frameY="-8" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0004" x="4740" y="1405" width="453" height="702" frameX="0" frameY="-15" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0005" x="5221" y="1405" width="453" height="695" frameX="-2" frameY="-22" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0006" x="5702" y="1405" width="452" height="689" frameX="-4" frameY="-28" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0007" x="6182" y="1405" width="452" height="687" frameX="-5" frameY="-31" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0008" x="6662" y="1405" width="451" height="687" frameX="-6" frameY="-31" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0009" x="7141" y="1405" width="451" height="687" frameX="-6" frameY="-31" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0010" x="7620" y="1405" width="452" height="688" frameX="-5" frameY="-30" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0011" x="0" y="2150" width="452" height="690" frameX="-5" frameY="-28" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0012" x="480" y="2150" width="452" height="693" frameX="-5" frameY="-25" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0013" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0014" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0015" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0016" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0017" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0018" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0019" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0020" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0021" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0022" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0023" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0024" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0025" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0026" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0027" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0028" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Cataflac_Up0029" x="960" y="2150" width="452" height="695" frameX="-5" frameY="-23" frameWidth="457" frameHeight="718"/>
+	<SubTexture name="Idle Anim0000" x="1440" y="2150" width="415" height="651" frameX="0" frameY="-27" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0001" x="1440" y="2150" width="415" height="651" frameX="0" frameY="-27" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0002" x="1883" y="2150" width="414" height="654" frameX="-1" frameY="-24" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0003" x="1883" y="2150" width="414" height="654" frameX="-1" frameY="-24" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0004" x="2325" y="2150" width="410" height="665" frameX="-4" frameY="-13" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0005" x="2325" y="2150" width="410" height="665" frameX="-4" frameY="-13" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0006" x="2763" y="2150" width="410" height="675" frameX="-8" frameY="-3" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0007" x="2763" y="2150" width="410" height="675" frameX="-8" frameY="-3" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0008" x="3201" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0009" x="3201" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0010" x="3639" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0011" x="3639" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0012" x="4077" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0013" x="4077" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0014" x="4515" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0015" x="4953" y="2150" width="406" height="667" frameX="-16" frameY="-14" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0016" x="4953" y="2150" width="406" height="667" frameX="-16" frameY="-14" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0017" x="5387" y="2150" width="407" height="668" frameX="-15" frameY="-12" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0018" x="5387" y="2150" width="407" height="668" frameX="-15" frameY="-12" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0019" x="5822" y="2150" width="408" height="673" frameX="-12" frameY="-7" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0020" x="5822" y="2150" width="408" height="673" frameX="-12" frameY="-7" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0021" x="6258" y="2150" width="409" height="677" frameX="-10" frameY="-2" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0022" x="6258" y="2150" width="409" height="677" frameX="-10" frameY="-2" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0023" x="3201" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0024" x="3201" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0025" x="6695" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0026" x="6695" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0027" x="7133" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0028" x="7133" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+	<SubTexture name="Idle Anim0029" x="7571" y="2150" width="410" height="678" frameX="-9" frameY="0" frameWidth="422" frameHeight="681"/>
+</TextureAtlas>

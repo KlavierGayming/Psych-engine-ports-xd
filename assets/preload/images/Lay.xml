@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Lay.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Lay0000" x="0" y="0" width="234" height="434" frameX="0" frameY="-24" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0001" x="0" y="0" width="234" height="434" frameX="0" frameY="-24" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0002" x="262" y="0" width="226" height="444" frameX="-1" frameY="-14" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0003" x="262" y="0" width="226" height="444" frameX="-1" frameY="-14" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0004" x="516" y="0" width="220" height="454" frameX="-1" frameY="-4" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0005" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0006" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0007" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0008" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0009" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0010" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0011" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0012" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+	<SubTexture name="Lay0013" x="764" y="0" width="217" height="458" frameX="-1" frameY="0" frameWidth="234" frameHeight="458"/>
+</TextureAtlas>

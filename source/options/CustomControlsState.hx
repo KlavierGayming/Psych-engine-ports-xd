@@ -157,7 +157,11 @@ class CustomControlsState extends MusicBeatSubstate
 		if (exitbutton.justReleased || androidback){
 			FlxG.switchState(new OptionsState());
 		}
-		
+		if(controls.UI_LEFT_P){
+			changeSelection(-1);
+		}else if (controls.UI_RIGHT_P){
+			changeSelection(1);
+		}
 		for (touch in FlxG.touches.list){
 			//left arrow animation
 			arrowanimate(touch);

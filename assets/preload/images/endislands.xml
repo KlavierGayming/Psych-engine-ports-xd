@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="endislands.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="End0000" x="0" y="0" width="1330" height="642"/>
+	<SubTexture name="End0001" x="0" y="0" width="1330" height="642"/>
+	<SubTexture name="End0002" x="0" y="670" width="1330" height="639" frameX="0" frameY="-3" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0003" x="0" y="670" width="1330" height="639" frameX="0" frameY="-3" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0004" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0005" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0006" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0007" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0008" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0009" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0010" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0011" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0012" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+	<SubTexture name="End0013" x="0" y="1337" width="1330" height="640" frameX="0" frameY="-2" frameWidth="1330" frameHeight="642"/>
+</TextureAtlas>

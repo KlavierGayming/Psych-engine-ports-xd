@@ -32,7 +32,7 @@ class Hitbox extends FlxSpriteGroup
 		if (widghtScreen == null)
 			widghtScreen = FlxG.width;
 
-		sizex = widghtScreen != null ? widghtScreen / (blockBox ? 5 : 4) : (blockBox ? 294:320);
+		sizex = (blockBox ? 294:320);
 
 		
 		//add graphic
@@ -61,11 +61,11 @@ class Hitbox extends FlxSpriteGroup
 
 			hitbox.add(add(buttonDown = createhitbox(294, "down")));
 
-			hitbox.add(add(buttonBlock = createhitbox(297, "block")));
+			hitbox.add(add(buttonBlock = createhitbox(594, "block")));
 
-			hitbox.add(add(buttonUp = createhitbox(391, "up")));
+			hitbox.add(add(buttonUp = createhitbox(688, "up")));
 
-			hitbox.add(add(buttonRight = createhitbox(687, "right")));
+			hitbox.add(add(buttonRight = createhitbox(984, "right")));
 		}
 	}
 
@@ -79,8 +79,6 @@ class Hitbox extends FlxSpriteGroup
 
 		/*button.width = sizex;
 		button.height = FlxG.height;*/
-		button.setGraphicSize(Std.int(sizex), FlxG.height);
-		button.updateHitbox();
 
 		button.alpha = 0;
 

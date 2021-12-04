@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sleepy_gatito.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Sleeping 0000" x="0" y="0" width="310" height="146" frameX="0" frameY="-3" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0001" x="338" y="0" width="312" height="146" frameX="0" frameY="-3" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0002" x="678" y="0" width="314" height="147" frameX="-1" frameY="-2" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0003" x="0" y="175" width="316" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0004" x="344" y="175" width="321" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0005" x="693" y="175" width="323" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0006" x="0" y="352" width="324" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0007" x="352" y="352" width="324" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0008" x="0" y="529" width="324" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0009" x="352" y="529" width="323" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0010" x="703" y="529" width="292" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0011" x="0" y="706" width="292" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0012" x="0" y="706" width="292" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+	<SubTexture name="Sleeping 0013" x="320" y="706" width="292" height="149" frameX="-2" frameY="0" frameWidth="326" frameHeight="149"/>
+</TextureAtlas>

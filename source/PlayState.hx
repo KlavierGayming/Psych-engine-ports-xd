@@ -260,7 +260,7 @@ class PlayState extends MusicBeatState
 	private var luaDebugGroup:FlxTypedGroup<DebugLuaText>;
 	public var introSoundsSuffix:String = '';
 
-	var hasAttack = true;
+	var hasAttack = false;
 
 	override public function create()
 	{
@@ -3276,26 +3276,32 @@ class PlayState extends MusicBeatState
 		var leftR = controls.NOTE_LEFT_R;
 		var blockR = controls.NOTE_BLOCK_R;
 
+		var pressBlockWhileHasAttack=false;
+
 		var controlArray:Array<Bool> = [leftP, downP, upP, rightP];
 		var controlReleaseArray:Array<Bool> = [leftR, downR, upR, rightR];
 		var controlHoldArray:Array<Bool> = [left, down, up, right];
 
 		// FlxG.watch.addQuick('asdfa', upP);
-
-		if (block)
+		if (hasAttack)
 		{
-			playerStrums.forEach(function(dn){
-				dn.alpha = 0.35;
-			});
-		}
-		else
-		{
-			playerStrums.forEach(function(dn){
-				dn.alpha = 1;
-			});
+			if (block)
+			{
+				pressBlockWhileHasAttack = true;
+				playerStrums.forEach(function(dn){
+					dn.alpha = 0.35;
+				});
+			}
+			else
+			{
+				pressBlockWhileHasAttack = false;
+				playerStrums.forEach(function(dn){
+					dn.alpha = 1;
+				});
+			}
 		}
 
-		if (!boyfriend.stunned && !block && generatedMusic)
+		if (!boyfriend.stunned && (!pressBlockWhileHasAttack) && generatedMusic)
 		{
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)

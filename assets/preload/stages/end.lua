@@ -44,32 +44,31 @@ function onCreate()
 
 	makeLuaSprite('stageback', 'endislands', -800, -300);
 	setScrollFactor('stageback', 0.8, 0.8);
-	scaleObject('stageback', 1, 1);
+	scaleObject('stageback', 3, 3);
 	
 	makeLuaSprite('stagefront', 'endfore', -900, 700);
 	setScrollFactor('stagefront', 1, 1);
 	scaleObject('stagefront', 3, 3);
 
-	makeAnimatedLuaSprite('speakers', 'Speakers', 200, 740)
     addAnimationByPrefix('speakers', 'bop', 'boombox', 24, false)
 	
 	-- Cameos!
-	makeAnimatedLuaSprite('core', 'Core', -300, 450)
+	makeAnimatedLuaSprite('core', 'Core', -300 + 150, 450)
 	addAnimationByPrefix('core', 'bop', 'Core',24,false)
 	scaleObject('core', 1.6, 1.6);
 
-	makeAnimatedLuaSprite('lay', 'Lay', 1000, 450)
+	makeAnimatedLuaSprite('lay', 'Lay', 1000 + 150, 450)
 	addAnimationByPrefix('lay', 'bop', 'Lay',24,false)
 	scaleObject('lay', 1.4, 1.4);
 	makeAnimatedLuaSprite('kade', 'KadeDev', 10, 230)
 	addAnimationByPrefix('kade', 'bop', 'Kade',24,false)
 	scaleObject('kade', 1.5, 1.5);
 
-	makeAnimatedLuaSprite('max','mackie', 600,300)
+	makeAnimatedLuaSprite('max','mackie', 600 + 150,300)
 	addAnimationByPrefix('max','bop','MaxBoppinFinished',24,false)
 	scaleObject('max', 1.1, 1.1);
 
-	makeAnimatedLuaSprite('kofv','CofvBoppin', -525,800)
+	makeAnimatedLuaSprite('kofv','CofvBoppin', -525 +150,800)
 	addAnimationByPrefix('kofv','bop','CofvBop',24,false)
 	scaleObject('kofv', 1.6, 1.6);
 
@@ -83,7 +82,6 @@ addLuaSprite('bg', false);
 	addLuaSprite('lay', false);
 	addLuaSprite('max',false)
 	addLuaSprite('kofv',false)
-	addLuaSprite('speakers',false)
 	
 	--addLuaSprite('kade', false); Gone. Sealed away forever
 	--addLuaSprite('stagelight_left', false);
