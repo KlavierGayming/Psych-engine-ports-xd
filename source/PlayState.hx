@@ -250,7 +250,7 @@ class PlayState extends MusicBeatState
 
 	#if mobileC
 	var mcontrols:Mobilecontrols; 
-	#end	
+	#end
 
 	private var luaArray:Array<FunkinLua> = [];
 
@@ -3326,7 +3326,7 @@ class PlayState extends MusicBeatState
 		// FlxG.watch.addQuick('asdfa', upP);
 		if (hasAttack)
 		{
-			if (block || mcontrols._virtualPad.buttonBlock.pressed)
+			if (block)
 			{
 				pressBlockWhileHasAttack = true;
 				playerStrums.forEach(function(dn){
@@ -3342,7 +3342,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (!boyfriend.stunned && (!pressBlockWhileHasAttack || mcontrols._virtualPad.buttonBlock.pressed) && generatedMusic)
+		if (!boyfriend.stunned && (!pressBlockWhileHasAttack) && generatedMusic)
 		{
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)
