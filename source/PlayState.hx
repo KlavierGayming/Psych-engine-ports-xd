@@ -965,7 +965,7 @@ class PlayState extends MusicBeatState
 			switch (mcontrols.mode)
 			{
 				case VIRTUALPAD_RIGHT | VIRTUALPAD_LEFT | VIRTUALPAD_CUSTOM:
-					controls.setVirtualPadNOTES(mcontrols._virtualPad, FULL, NONE);
+					controls.setVirtualPadNOTES(mcontrols._virtualPad, (hasAttack?LEFT_FULL_BLOCK:FULL), NONE);
 				case HITBOX:
 					controls.setHitBoxNOTES(mcontrols._hitbox, hasAttack);
 				default:
@@ -3312,7 +3312,7 @@ class PlayState extends MusicBeatState
 		// FlxG.watch.addQuick('asdfa', upP);
 		if (hasAttack)
 		{
-			if (block)
+			if (block || mcontrols._virtualPad.buttonBlock.pressed)
 			{
 				pressBlockWhileHasAttack = true;
 				playerStrums.forEach(function(dn){
@@ -3328,7 +3328,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (!boyfriend.stunned && (!pressBlockWhileHasAttack) && generatedMusic)
+		if (!boyfriend.stunned && (!pressBlockWhileHasAttack || mcontrols._virtualPad.buttonBlock.pressed) && generatedMusic)
 		{
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)
