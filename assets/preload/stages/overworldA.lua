@@ -4,11 +4,9 @@ function onCreate()
 	setScrollFactor('stageback', 0.8, 0.8);
 	scaleObject('stageback', 1, 1);
 	
-	makeLuaSprite('stagefront', 'fore', -1300,-450);
+	makeLuaSprite('stagefront', 'fore', 350,355);
 	setScrollFactor('stagefront', 1, 1);
 	scaleObject('stagefront', 2, 2);
-		    makeAnimatedLuaSprite('speakers', 'Speakers', 200, 435)
-    addAnimationByPrefix('speakers', 'bop', 'boombox', 24, false)
 			    makeAnimatedLuaSprite('loaf', 'sleepy_gatito', -230, 750)
     addAnimationByPrefix('loaf', 'bop', 'Sleeping', 24, false)
 
@@ -17,8 +15,7 @@ function onCreate()
 
 	addLuaSprite('stageback', false);
 	addLuaSprite('stagefront', false);
-		 addLuaSprite('speakers', false);
-		  addLuaSprite('loaf', true);
+	addLuaSprite('speakers', false);
 	--addLuaSprite('stagelight_left', false);
 	--addLuaSprite('stagelight_right', false);
 	--addLuaSprite('stagecurtains', false);
