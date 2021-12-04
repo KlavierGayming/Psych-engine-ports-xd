@@ -1,14 +1,3 @@
-function onUpdate()
-	if followchars == true then
-        if mustHitSection == false then
-            setProperty('defaultCamZoom',0.6)
-        else
-            setProperty('defaultCamZoom',0.7)
-        end
-   
-    end
-end
-
 function onCreate()
 	math.randomseed(os.clock() * 1000);
 	makeLuaSprite('bg', 'background/endbg', -600, -350);
@@ -47,7 +36,6 @@ function onCreate()
 	addAnimationByPrefix('kofv','bop','CofvBop',24,false)
 	scaleObject('kofv', 1.6, 1.6);
 
-	-- sprites that only load if Low Quality is turned off
 	
 	addLuaSprite('bg', false);
 	addLuaSprite('ship', false);
@@ -58,7 +46,6 @@ function onCreate()
 	addLuaSprite('max',false)
 	addLuaSprite('kofv',false)
 	
-	--close(true); --nah we need this script running
 end
 function onBeatHit()
 	objectPlayAnimation('core', 'bop', true)
@@ -84,4 +71,15 @@ function onEvent(name,value1,value2) -- value 1 and value 2 are not needed here 
 		
 		
 	end
+end
+
+function onUpdate()
+	if followchars == true then
+        if mustHitSection == false then
+            setProperty('defaultCamZoom',0.6)
+        else
+            setProperty('defaultCamZoom',0.7)
+        end
+   
+    end
 end
