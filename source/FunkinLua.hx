@@ -537,6 +537,7 @@ class FunkinLua {
 				case 'down': key = lePlayState.getControl('NOTE_DOWN');
 				case 'up': key = lePlayState.getControl('NOTE_UP');
 				case 'right': key = lePlayState.getControl('NOTE_RIGHT');
+				case 'block': key = lePlayState.getControl('NOTE_BLOCK');
 			}
 			return key;
 		});

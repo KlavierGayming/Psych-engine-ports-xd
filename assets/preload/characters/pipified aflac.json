@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				125,
+				45
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Aflac blaze idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				194,
+				46
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Aflac blaze left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				45
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Aflac blaze right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-53,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Aflac blaze down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				112,
+				166
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Aflac blaze up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pipified_Aflac",
+	"position": [
+		-250,
+		210
+	],
+	"healthicon": "aflac2",
+	"flip_x": false,
+	"healthbar_colors": [
+		129,
+		196,
+		255
+	],
+	"camera_position": [
+		10,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

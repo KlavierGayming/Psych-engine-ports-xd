@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Core.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Core0000" x="0" y="0" width="187" height="480" frameX="0" frameY="-8" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0001" x="0" y="0" width="187" height="480" frameX="0" frameY="-8" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0002" x="215" y="0" width="187" height="487" frameX="0" frameY="0" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0003" x="215" y="0" width="187" height="487" frameX="0" frameY="0" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0004" x="430" y="0" width="187" height="482" frameX="0" frameY="-5" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0005" x="430" y="0" width="187" height="482" frameX="0" frameY="-5" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0006" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0007" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0008" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0009" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0010" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0011" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+	<SubTexture name="Core0012" x="645" y="0" width="187" height="479" frameX="0" frameY="-9" frameWidth="187" frameHeight="488"/>
+</TextureAtlas>

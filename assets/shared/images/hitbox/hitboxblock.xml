@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="hitbox.png">
-	<SubTexture name="left" x="0" y="0" width="320" height="720" frameX="0" frameY="0" frameWidth="294" frameHeight="720"/>
-	<SubTexture name="down" x="294" y="0" width="320" height="720" frameX="0" frameY="0" frameWidth="294" frameHeight="720"/>
-    <SubTexture name="block" x="297" y="0" width="320" height="720" frameX="0" frameY="0" frameWidth="94" frameHeight="720"/>
-	<SubTexture name="up" x="391" y="0" width="320" height="720" frameX="0" frameY="0" frameWidth="294" frameHeight="720"/>
-	<SubTexture name="right" x="687" y="0" width="320" height="720" frameX="0" frameY="0" frameWidth="294" frameHeight="720"/>
+	<SubTexture name="left" x="0" y="0" width="297" height="720" frameX="0" frameY="0" frameWidth="297" frameHeight="720"/>
+	<SubTexture name="down" x="297" y="0" width="297" height="720" frameX="0" frameY="0" frameWidth="297" frameHeight="720"/>
+    <SubTexture name="block" x="594" y="0" width="94" height="720" frameX="0" frameY="0" frameWidth="94" frameHeight="720"/>
+	<SubTexture name="up" x="688" y="0" width="297" height="720" frameX="0" frameY="0" frameWidth="297" frameHeight="720"/>
+	<SubTexture name="right" x="984" y="0" width="297" height="720" frameX="0" frameY="0" frameWidth="297" frameHeight="720"/>
 </TextureAtlas>

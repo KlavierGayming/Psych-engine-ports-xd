@@ -39,15 +39,9 @@ class Hitbox extends FlxSpriteGroup
 		hitbox = new FlxSpriteGroup();
 		hitbox.scrollFactor.set();
 
-		var hitbox_hint:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('hitbox/hitbox_hint', 'shared'));
+		var hitbox_hint:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('hitbox/hitbox_hint' + (blockBox?"block":""), 'shared'));
 
 		hitbox_hint.alpha = 0.35;
-
-		if (sizex != 320)
-		{
-		hitbox_hint.setGraphicSize(FlxG.width);
-		hitbox_hint.updateHitbox();
-		}
 			
 		add(hitbox_hint);
 

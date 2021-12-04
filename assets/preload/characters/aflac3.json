@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				155
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "AflacGod_Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				297,
+				151
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "AflacGod_Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-157,
+				152
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "AflacGod_Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				33,
+				83
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "AflacGod_Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				236
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "AflacGod_Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				41,
+				320
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "AflacGod_Yeet",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/aflactheend",
+	"position": [
+		-250,
+		80
+	],
+	"healthicon": "aflac3",
+	"flip_x": false,
+	"healthbar_colors": [
+		129,
+		196,
+		255
+	],
+	"camera_position": [
+		-110,
+		-110
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

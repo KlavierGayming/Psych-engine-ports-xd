@@ -260,6 +260,8 @@ class PlayState extends MusicBeatState
 	private var luaDebugGroup:FlxTypedGroup<DebugLuaText>;
 	public var introSoundsSuffix:String = '';
 
+	var hasAttack = true;
+
 	override public function create()
 	{
         #if MODS_ALLOWED
@@ -932,13 +934,13 @@ class PlayState extends MusicBeatState
 		doof.cameras = [camHUD];
 
 		#if mobileC
-			mcontrols = new Mobilecontrols();
+			mcontrols = new Mobilecontrols(hasAttack);
 			switch (mcontrols.mode)
 			{
 				case VIRTUALPAD_RIGHT | VIRTUALPAD_LEFT | VIRTUALPAD_CUSTOM:
 					controls.setVirtualPadNOTES(mcontrols._virtualPad, FULL, NONE);
 				case HITBOX:
-					controls.setHitBoxNOTES(mcontrols._hitbox);
+					controls.setHitBoxNOTES(mcontrols._hitbox, hasAttack);
 				default:
 			}
 			trackedinputsNOTES = controls.trackedinputsNOTES;
@@ -1572,6 +1574,9 @@ class PlayState extends MusicBeatState
 							trace("got gf notes");
 						}
 					}
+
+					if (swagNote.noteType == 'Aflac Attack')
+						hasAttack = true;
 					
 					swagNote.scrollFactor.set();
 
@@ -1850,6 +1855,7 @@ class PlayState extends MusicBeatState
 		}*/
 
 		callOnLuas('onUpdate', [elapsed]);
+
 
 		switch (curStage)
 		{
@@ -3256,23 +3262,40 @@ class PlayState extends MusicBeatState
 		var right = controls.NOTE_RIGHT;
 		var down = controls.NOTE_DOWN;
 		var left = controls.NOTE_LEFT;
+		var block = controls.NOTE_BLOCK;
 
 		var upP = controls.NOTE_UP_P;
 		var rightP = controls.NOTE_RIGHT_P;
 		var downP = controls.NOTE_DOWN_P;
 		var leftP = controls.NOTE_LEFT_P;
+		var blockP = controls.NOTE_BLOCK_P;
 
 		var upR = controls.NOTE_UP_R;
 		var rightR = controls.NOTE_RIGHT_R;
 		var downR = controls.NOTE_DOWN_R;
 		var leftR = controls.NOTE_LEFT_R;
+		var blockR = controls.NOTE_BLOCK_R;
 
 		var controlArray:Array<Bool> = [leftP, downP, upP, rightP];
 		var controlReleaseArray:Array<Bool> = [leftR, downR, upR, rightR];
 		var controlHoldArray:Array<Bool> = [left, down, up, right];
 
 		// FlxG.watch.addQuick('asdfa', upP);
-		if (!boyfriend.stunned && generatedMusic)
+
+		if (block)
+		{
+			playerStrums.forEach(function(dn){
+				dn.alpha = 0.35;
+			});
+		}
+		else
+		{
+			playerStrums.forEach(function(dn){
+				dn.alpha = 1;
+			});
+		}
+
+		if (!boyfriend.stunned && !block && generatedMusic)
 		{
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)

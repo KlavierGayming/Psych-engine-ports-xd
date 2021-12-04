@@ -17,7 +17,7 @@ class Mobilecontrols extends FlxSpriteGroup
 
 	var config:Config;
 
-	public function new() 
+	public function new(block:Bool) 
 	{
 		super();
 		
@@ -30,45 +30,38 @@ class Mobilecontrols extends FlxSpriteGroup
 		switch (mode)
 		{
 			case VIRTUALPAD_RIGHT:
-				initVirtualPad(0);
+				initVirtualPad(0, block);
 			case VIRTUALPAD_LEFT:
-				initVirtualPad(1);
+				initVirtualPad(1, block);
 			case VIRTUALPAD_CUSTOM:
-				initVirtualPad(2);
-			case VIRTUALPAD_LEFT_BLOCK:
-				initVirtualPad(3);
-			case VIRTUALPAD_CUSTOM_BLOCK:
-				initVirtualPad(4);
-			case VIRTUALPAD_RIGHT_BLOCK:
-				initVirtualPad(5);
+				initVirtualPad(2, block);
 			case HITBOX:
-				_hitbox = new Hitbox();
-				add(_hitbox);
-			case HITBOX_BLOCK:
-				_hitbox = new Hitbox(true);
+				_hitbox = new Hitbox(block);
 				add(_hitbox);
 			case KEYBOARD:
 		}
 	}
 
-	function initVirtualPad(vpadMode:Int) 
+	function initVirtualPad(vpadMode:Int, block:Bool) 
 	{
 		switch (vpadMode)
 		{
 			case 1:
-				_virtualPad = new FlxVirtualPad(FULL, NONE);
+				if (!block)
+					_virtualPad = new FlxVirtualPad(FULL, NONE);
+				else
+					_virtualPad = new FlxVirtualPad(LEFT_FULL_BLOCK, NONE);
 			case 2:
-				_virtualPad = new FlxVirtualPad(FULL, NONE);
+				if (!block)
+					_virtualPad = new FlxVirtualPad(FULL, NONE);
+				else
+					_virtualPad = new FlxVirtualPad(LEFT_FULL_BLOCK, NONE);
 				_virtualPad = config.loadcustom(_virtualPad, false);
-			case 3:
-				_virtualPad = new FlxVirtualPad(LEFT_FULL_BLOCK, NONE);
-			case 4:
-				_virtualPad = new FlxVirtualPad(LEFT_FULL_BLOCK, NONE);
-				_virtualPad = config.loadcustom(_virtualPad, true);
-			case 5:
-				_virtualPad = new FlxVirtualPad(RIGHT_FULL_BLOCK, NONE);
 			default: // 0
-				_virtualPad = new FlxVirtualPad(RIGHT_FULL, NONE);
+				if (!block) 
+					_virtualPad = new FlxVirtualPad(RIGHT_FULL, NONE);
+				else
+					_virtualPad = new FlxVirtualPad(RIGHT_FULL_BLOCK, NONE);
 		}
 		
 		_virtualPad.alpha = 0.75;
@@ -84,8 +77,6 @@ class Mobilecontrols extends FlxSpriteGroup
 			case 2: KEYBOARD;
 			case 3: VIRTUALPAD_CUSTOM;
 			case 4:	HITBOX;
-			case 5: VIRTUALPAD_RIGHT_BLOCK;
-			case 6: VIRTUALPAD_LEFT_BLOCK;
 
 			default: VIRTUALPAD_RIGHT;
 
@@ -98,9 +89,5 @@ enum ControlsGroup {
 	VIRTUALPAD_LEFT;
 	KEYBOARD;
 	VIRTUALPAD_CUSTOM;
-	VIRTUALPAD_RIGHT_BLOCK;
-	VIRTUALPAD_LEFT_BLOCK;
-	VIRTUALPAD_CUSTOM_BLOCK;
-
 	HITBOX;
 }

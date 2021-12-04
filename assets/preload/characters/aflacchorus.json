@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-135,
+				205
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle Anim",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-79,
+				200
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Cataflac_Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-158,
+				198
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Cataflac_Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-141,
+				184
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Cataflac_Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-91,
+				243
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Cataflac_Up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Aflac_Chorus",
+	"position": [
+		-250,
+		210
+	],
+	"healthicon": "aflac",
+	"flip_x": false,
+	"healthbar_colors": [
+		129,
+		196,
+		255
+	],
+	"camera_position": [
+		30,
+		-170
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

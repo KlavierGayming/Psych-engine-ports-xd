@@ -34,7 +34,9 @@ enum abstract Action(String) to String from String
 	var NOTE_LEFT = "note_left";
 	var NOTE_RIGHT = "note_right";
 	var NOTE_DOWN = "note_down";
+	var NOTE_BLOCK = "note_block";
 	var NOTE_UP_P = "note_up-press";
+	var NOTE_BLOCK_P = "note_block-press";
 	var NOTE_LEFT_P = "note_left-press";
 	var NOTE_RIGHT_P = "note_right-press";
 	var NOTE_DOWN_P = "note_down-press";
@@ -42,6 +44,7 @@ enum abstract Action(String) to String from String
 	var NOTE_LEFT_R = "note_left-release";
 	var NOTE_RIGHT_R = "note_right-release";
 	var NOTE_DOWN_R = "note_down-release";
+	var NOTE_BLOCK_R = "note_block-release";
 	var ACCEPT = "accept";
 	var BACK = "back";
 	var PAUSE = "pause";
@@ -67,14 +70,17 @@ abstract Action(String) to String from String
 	var NOTE_LEFT = "note_left";
 	var NOTE_RIGHT = "note_right";
 	var NOTE_DOWN = "note_down";
+	var NOTE_BLOCK = "note_block";
 	var NOTE_UP_P = "note_up-press";
 	var NOTE_LEFT_P = "note_left-press";
 	var NOTE_RIGHT_P = "note_right-press";
 	var NOTE_DOWN_P = "note_down-press";
+	var NOTE_BLOCK_P = "note_block-press";
 	var NOTE_UP_R = "note_up-release";
 	var NOTE_LEFT_R = "note_left-release";
 	var NOTE_RIGHT_R = "note_right-release";
 	var NOTE_DOWN_R = "note_down-release";
+	var NOTE_BLOCK_R = "note_block-release";
 	var ACCEPT = "accept";
 	var BACK = "back";
 	var PAUSE = "pause";
@@ -103,6 +109,7 @@ enum Control
 	NOTE_LEFT;
 	NOTE_RIGHT;
 	NOTE_DOWN;
+	NOTE_BLOCK;
 	RESET;
 	ACCEPT;
 	BACK;
@@ -139,14 +146,20 @@ class Controls extends FlxActionSet
 	var _note_left = new FlxActionDigital(Action.NOTE_LEFT);
 	var _note_right = new FlxActionDigital(Action.NOTE_RIGHT);
 	var _note_down = new FlxActionDigital(Action.NOTE_DOWN);
+	var _note_block = new FlxActionDigital(Action.NOTE_BLOCK);
+
 	var _note_upP = new FlxActionDigital(Action.NOTE_UP_P);
 	var _note_leftP = new FlxActionDigital(Action.NOTE_LEFT_P);
 	var _note_rightP = new FlxActionDigital(Action.NOTE_RIGHT_P);
 	var _note_downP = new FlxActionDigital(Action.NOTE_DOWN_P);
+	var _note_blockP = new FlxActionDigital(Action.NOTE_BLOCK_P);
 	var _note_upR = new FlxActionDigital(Action.NOTE_UP_R);
 	var _note_leftR = new FlxActionDigital(Action.NOTE_LEFT_R);
 	var _note_rightR = new FlxActionDigital(Action.NOTE_RIGHT_R);
 	var _note_downR = new FlxActionDigital(Action.NOTE_DOWN_R);
+
+	var _note_blockR = new FlxActionDigital(Action.NOTE_BLOCK_R);
+
 	var _accept = new FlxActionDigital(Action.ACCEPT);
 	var _back = new FlxActionDigital(Action.BACK);
 	var _pause = new FlxActionDigital(Action.PAUSE);
@@ -226,6 +239,11 @@ class Controls extends FlxActionSet
 	inline function get_NOTE_UP()
 		return _note_up.check();
 
+	public var NOTE_BLOCK(get, never):Bool;
+
+	inline function get_NOTE_BLOCK()
+		return _note_block.check();
+
 	public var NOTE_LEFT(get, never):Bool;
 
 	inline function get_NOTE_LEFT()
@@ -261,6 +279,11 @@ class Controls extends FlxActionSet
 	inline function get_NOTE_DOWN_P()
 		return _note_downP.check();
 
+	public var NOTE_BLOCK_P(get, never):Bool;
+
+	inline function get_NOTE_BLOCK_P()
+		return _note_blockP.check();
+
 	public var NOTE_UP_R(get, never):Bool;
 
 	inline function get_NOTE_UP_R()
@@ -280,6 +303,11 @@ class Controls extends FlxActionSet
 
 	inline function get_NOTE_DOWN_R()
 		return _note_downR.check();
+
+	public var NOTE_BLOCK_R(get, never):Bool;
+
+	inline function get_NOTE_BLOCK_R()
+		return _note_blockR.check();
 
 	public var ACCEPT(get, never):Bool;
 
@@ -322,14 +350,17 @@ class Controls extends FlxActionSet
 		add(_note_left);
 		add(_note_right);
 		add(_note_down);
+		add(_note_block);
 		add(_note_upP);
 		add(_note_leftP);
 		add(_note_rightP);
 		add(_note_downP);
+		add(_note_blockP);
 		add(_note_upR);
 		add(_note_leftR);
 		add(_note_rightR);
 		add(_note_downR);
+		add(_note_blockR);
 		add(_accept);
 		add(_back);
 		add(_pause);
@@ -361,14 +392,17 @@ class Controls extends FlxActionSet
 		add(_note_left);
 		add(_note_right);
 		add(_note_down);
+		add(_note_block);
 		add(_note_upP);
 		add(_note_leftP);
 		add(_note_rightP);
 		add(_note_downP);
+		add(_note_blockP);
 		add(_note_upR);
 		add(_note_leftR);
 		add(_note_rightR);
 		add(_note_downR);
+		add(_note_blockR);
 		add(_accept);
 		add(_back);
 		add(_pause);
@@ -394,12 +428,14 @@ class Controls extends FlxActionSet
 		action.add(input);
 	}
 	
-	public function setHitBoxNOTES(hitbox:Hitbox) 
+	public function setHitBoxNOTES(hitbox:Hitbox, attackthing:Bool) 
 	{
 		inline forEachBound(Control.NOTE_UP, (action, state) -> addbuttonuNOTES(action, hitbox.buttonUp, state));
 		inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbuttonuNOTES(action, hitbox.buttonDown, state));
 		inline forEachBound(Control.NOTE_LEFT, (action, state) -> addbuttonuNOTES(action, hitbox.buttonLeft, state));
 		inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbuttonuNOTES(action, hitbox.buttonRight, state));	
+		if (attackthing)
+			inline forEachBound(Control.NOTE_BLOCK, (action, state) -> addbuttonuNOTES(action, hitbox.buttonBlock, state));
 	}
 	
 	public function setVirtualPadNOTES(virtualPad:FlxVirtualPad, ?DPad:FlxDPadMode, ?Action:FlxActionMode) 
@@ -426,6 +462,12 @@ class Controls extends FlxActionSet
 				inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonDown, state));
 				inline forEachBound(Control.NOTE_LEFT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonLeft, state));
 				inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonRight, state));
+			case LEFT_FULL_BLOCK | RIGHT_FULL_BLOCK:
+				inline forEachBound(Control.NOTE_UP, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonUp, state));
+				inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonDown, state));
+				inline forEachBound(Control.NOTE_LEFT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonLeft, state));
+				inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonRight, state));
+				inline forEachBound(Control.NOTE_BLOCK, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonBlock, state));
 			
 			case NONE:
 		}
@@ -487,6 +529,12 @@ class Controls extends FlxActionSet
 				inline forEachBound(Control.UI_DOWN, (action, state) -> addbuttonuUI(action, virtualPad.buttonDown, state));
 				inline forEachBound(Control.UI_LEFT, (action, state) -> addbuttonuUI(action, virtualPad.buttonLeft, state));
 				inline forEachBound(Control.UI_RIGHT, (action, state) -> addbuttonuUI(action, virtualPad.buttonRight, state));
+			case LEFT_FULL_BLOCK | RIGHT_FULL_BLOCK:
+				inline forEachBound(Control.NOTE_UP, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonUp, state));
+				inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonDown, state));
+				inline forEachBound(Control.NOTE_LEFT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonLeft, state));
+				inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonRight, state));
+				inline forEachBound(Control.NOTE_BLOCK, (action, state) -> addbuttonuNOTES(action, virtualPad.buttonBlock, state));
 			
 			case NONE:
 		}
@@ -569,6 +617,7 @@ class Controls extends FlxActionSet
 			case NOTE_DOWN: _note_down;
 			case NOTE_LEFT: _note_left;
 			case NOTE_RIGHT: _note_right;
+			case NOTE_BLOCK: _note_block;
 			case ACCEPT: _accept;
 			case BACK: _back;
 			case PAUSE: _pause;
@@ -624,6 +673,10 @@ class Controls extends FlxActionSet
 				func(_note_down, PRESSED);
 				func(_note_downP, JUST_PRESSED);
 				func(_note_downR, JUST_RELEASED);
+			case NOTE_BLOCK:
+				func(_note_block, PRESSED);
+				func(_note_blockP, JUST_PRESSED);
+				func(_note_blockR, JUST_RELEASED);
 			case ACCEPT:
 				func(_accept, JUST_PRESSED);
 			case BACK:
@@ -777,6 +830,7 @@ class Controls extends FlxActionSet
 				inline bindKeys(Control.NOTE_DOWN, keysMap.get('note_down'));
 				inline bindKeys(Control.NOTE_LEFT, keysMap.get('note_left'));
 				inline bindKeys(Control.NOTE_RIGHT, keysMap.get('note_right'));
+				inline bindKeys(Control.NOTE_BLOCK, [SPACE]);
 
 				inline bindKeys(Control.ACCEPT, keysMap.get('accept'));
 				inline bindKeys(Control.BACK, keysMap.get('back'));
