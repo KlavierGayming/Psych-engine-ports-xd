@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="CofvBoppin.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CofvBop0000" x="1" y="1" width="188" height="284" pivotX="85.45" pivotY="57.8"/>
+	<SubTexture name="CofvBop0001" x="189" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0002" x="377" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0003" x="565" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0004" x="753" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0005" x="753" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0006" x="753" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0007" x="753" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0008" x="753" y="1" width="188" height="284"/>
+	<SubTexture name="CofvBop0009" x="753" y="1" width="188" height="284"/>
+</TextureAtlas>

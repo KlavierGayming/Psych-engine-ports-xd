@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mackie.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MaxBoppinFinished0000" x="1" y="1" width="260" height="575" pivotX="-648.3" pivotY="-238.1"/>
+	<SubTexture name="MaxBoppinFinished0001" x="1" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0002" x="261" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0003" x="261" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0004" x="521" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0005" x="521" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0006" x="781" y="1" width="260" height="575"/>
+	<SubTexture name="MaxBoppinFinished0007" x="781" y="1" width="260" height="575"/>
+</TextureAtlas>

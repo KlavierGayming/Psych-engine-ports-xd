@@ -1,16 +1,14 @@
 function onCreate()
 
-  makeLuaSprite('stageback', 'villagebgnight', -940, -500);
+  makeLuaSprite('stageback', 'background/villagebgnight', -940, -500);
 	setScrollFactor('stageback', 0.8, 0.8);
 	scaleObject('stageback', 1, 1);
 	
-	makeLuaSprite('stagefront', 'fore', -1300,-450);
+	makeLuaSprite('stagefront', 'background/fore', -1300,-450);
 	setScrollFactor('stagefront', 1, 1);
 	scaleObject('stagefront', 2, 2);
-    makeAnimatedLuaSprite('speakers', 'Speakers', 200, 435)
-    addAnimationByPrefix('speakers', 'bop', 'boombox', 24, false)
 
-       makeAnimatedLuaSprite('loaf', 'gatito', -210, 680)
+       makeAnimatedLuaSprite('loaf', 'background/gatito', -210, 680)
     addAnimationByPrefix('loaf', 'bop', 'CATO', 24, false)
 
     -- sprites that only load if Low Quality is turned off

@@ -1,13 +1,13 @@
 function onCreate()
 	-- background shit
-	makeLuaSprite('stageback', 'villagebg', -940, -500);
+	makeLuaSprite('stageback', 'background/villagebg', -940, -500);
 	setScrollFactor('stageback', 0.8, 0.8);
 	scaleObject('stageback', 1, 1);
 	
-	makeLuaSprite('stagefront', 'fore', 350,355);
+	makeLuaSprite('stagefront', 'background/fore', -1300,-450);
 	setScrollFactor('stagefront', 1, 1);
 	scaleObject('stagefront', 2, 2);
-			    makeAnimatedLuaSprite('loaf', 'sleepy_gatito', -230, 750)
+			    makeAnimatedLuaSprite('loaf', 'background/sleepy_gatito', -230, 750)
     addAnimationByPrefix('loaf', 'bop', 'Sleeping', 24, false)
 
 	-- sprites that only load if Low Quality is turned off
@@ -15,7 +15,8 @@ function onCreate()
 
 	addLuaSprite('stageback', false);
 	addLuaSprite('stagefront', false);
-	addLuaSprite('speakers', false);
+		 addLuaSprite('speakers', false);
+		  addLuaSprite('loaf', true);
 	--addLuaSprite('stagelight_left', false);
 	--addLuaSprite('stagelight_right', false);
 	--addLuaSprite('stagecurtains', false);

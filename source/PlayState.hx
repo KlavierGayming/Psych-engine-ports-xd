@@ -211,6 +211,8 @@ class PlayState extends MusicBeatState
 	var upperBoppers:BGSprite;
 	var bottomBoppers:BGSprite;
 	var santa:BGSprite;
+
+	var loafyboy:FlxSprite;
 	var heyTimer:Float;
 
 	var bgGirls:BackgroundGirls;
@@ -369,6 +371,31 @@ class PlayState extends MusicBeatState
 
 		switch (curStage)
 		{
+			/*case 'overworldA':
+				var bg:BGSprite = new BGSprite('background/villagebg', -940, -500,1,1);
+				var fore:BGSprite=new BGSprite('background/fore', -1300,-450,1,1);
+				loafyboy = new FlxSprite(-230, 750);
+				loafyboy.frames = Paths.getSparrowAtlas('sleepy_gatito');
+				loafyboy.animation.addByPrefix('bop', 'Sleeping');
+
+				add(bg);
+				add(fore);
+				add(loafyboy);
+			case 'overworldB':
+				var bg:BGSprite = new BGSprite('background/villagebgnight', -940, -500,1,1);
+				var fore:BGSprite=new BGSprite('background/fore', 0,0,1,1);
+				loafyboy = new FlxSprite(-230, 750);
+				loafyboy.frames = Paths.getSparrowAtlas('gatito');
+				loafyboy.animation.addByPrefix('bop', 'CATO');
+
+				add(bg);
+				add(fore);
+			case 'overworldC':
+				var bg:BGSprite = new BGSprite('background/villagebgburning', -940, -500,1,1);
+				var fore:BGSprite=new BGSprite('background/fore', 0,0,1,1);
+
+				add(bg);
+				add(fore); deez*/
 			case 'stage': //Week 1
 				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
 				add(bg);

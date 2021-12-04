@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gatito.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CATO0000" x="0" y="0" width="236" height="243" frameX="0" frameY="-10" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0001" x="0" y="0" width="236" height="243" frameX="0" frameY="-10" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0002" x="264" y="0" width="235" height="245" frameX="0" frameY="-8" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0003" x="264" y="0" width="235" height="245" frameX="0" frameY="-8" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0004" x="527" y="0" width="231" height="248" frameX="-2" frameY="-5" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0005" x="527" y="0" width="231" height="248" frameX="-2" frameY="-5" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0006" x="786" y="0" width="225" height="252" frameX="-5" frameY="-1" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0007" x="786" y="0" width="225" height="252" frameX="-5" frameY="-1" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0008" x="0" y="280" width="222" height="253" frameX="-7" frameY="0" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0009" x="0" y="280" width="222" height="253" frameX="-7" frameY="0" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0010" x="250" y="280" width="223" height="253" frameX="-6" frameY="0" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0011" x="250" y="280" width="223" height="253" frameX="-6" frameY="0" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0012" x="501" y="280" width="225" height="253" frameX="-4" frameY="0" frameWidth="236" frameHeight="253"/>
+	<SubTexture name="CATO0013" x="754" y="280" width="225" height="253" frameX="-4" frameY="0" frameWidth="236" frameHeight="253"/>
+</TextureAtlas>

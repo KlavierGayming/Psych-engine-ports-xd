@@ -297,6 +297,13 @@ class CustomControlsState extends MusicBeatSubstate
 
 				movebutton(touch, _pad.buttonLeft);
 			}
+
+			if (_pad.buttonBlock.justPressed) {
+				if (curSelected != 3)
+					changeSelection(0,3);
+
+				movebutton(touch, _pad.buttonBlock);
+			}
 		}
 	}
 
