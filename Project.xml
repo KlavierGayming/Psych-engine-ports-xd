@@ -117,7 +117,7 @@
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
-	<haxelib name="linc_luajit-dee" if="LUA_ALLOWED"/>
+	<haxelib name="linc-luajit-dee" if="LUA_ALLOWED"/>
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="discord_rpc" if="desktop"/>
 	<haxelib name="actuate" />
