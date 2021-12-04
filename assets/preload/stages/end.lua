@@ -1,3 +1,23 @@
+
+function onEvent(name,value1,value2) -- value 1 and value 2 are not needed here but ig its fine to keep them
+	if name == 'End Ship' then
+		local scale = float(0.3,0.35)
+		scaleObject('ship', scale, scale);
+		setProperty('ship.y', int(-150,150)) -- 
+		if bool(50) then
+			setProperty('ship.x',-1000)
+			setProperty('ship.flipX',false)  -- thanks shado mario
+		doTweenX('endship','ship',3000,float(4,7),'linear') -- woosh
+		else
+				setProperty('ship.x',3000)
+				setProperty('ship.flipX',true) -- thank shado mar
+				doTweenX('endship','ship',-1000,float(4,7),'linear') -- woosh
+		end
+		-- math.random sucks penis  xdddd
+		quickPrint('pain');
+	end
+end
+
 function onCreate()
 	quickPrint("Creating")
 	makeLuaSprite('bg', 'background/endbg', -600, -350);
@@ -54,24 +74,6 @@ function onBeatHit()
 	objectPlayAnimation('kofv', 'bop', true)
 	objectPlayAnimation('speakers', 'bop', true)
 end
-function onEvent(name,value1,value2) -- value 1 and value 2 are not needed here but ig its fine to keep them
-	if name == 'End Ship' then
-		local scale = float(0.3,0.35)
-		scaleObject('ship', scale, scale);
-		setProperty('ship.y', int(-150,150)) -- 
-		if bool(50) then
-			setProperty('ship.x',-1000)
-			setProperty('ship.flipX',false)  -- thanks shado mario
-		doTweenX('endship','ship',3000,float(4,7),'linear') -- woosh
-		else
-				setProperty('ship.x',3000)
-				setProperty('ship.flipX',true) -- thank shado mar
-				doTweenX('endship','ship',-1000,float(4,7),'linear') -- woosh
-		end
-		-- math.random sucks penis  xdddd
-		quickPrint('pain');
-	end
-end
 
 function onUpdate()
 	if followchars == true then
@@ -83,6 +85,8 @@ function onUpdate()
    
     end
 end
+
+
 
 
 MODULUS = 0;
