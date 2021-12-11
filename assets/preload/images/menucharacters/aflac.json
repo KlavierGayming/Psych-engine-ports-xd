@@ -1,0 +1,10 @@
+{
+	"idle_anim": "AflacStory",
+	"image": "Menu_Aflac",
+	"position": [
+		180,
+		-10
+	],
+	"scale": 1,
+	"confirm_anim": "M Dad Idle"
+}

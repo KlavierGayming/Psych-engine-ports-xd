@@ -158,8 +158,6 @@ class Config {
 
 		for(buttons in _pad)
 		{
-			if (tempCount == 2 && !deez)
-				tempCount++;
 			buttons.x = save.data.buttons[tempCount].x;
 			buttons.y = save.data.buttons[tempCount].y;
 			tempCount++;

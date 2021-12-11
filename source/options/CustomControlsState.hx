@@ -96,7 +96,7 @@ class CustomControlsState extends MusicBeatSubstate
 		
 		//hitboxes
 
-		_hb = new Hitbox();
+		_hb = new Hitbox(true);
 		_hb.visible = false;
 
 		// buttons
@@ -143,6 +143,7 @@ class CustomControlsState extends MusicBeatSubstate
 		add(down_text);
 		add(left_text);
 		add(right_text);
+		add(block_text);
 
 		// change selection
 		changeSelection();
@@ -209,7 +210,7 @@ class CustomControlsState extends MusicBeatSubstate
 				}
 			
 			_hb.visible = false;
-	
+			setbuttontexts();
 			switch curSelected{
 				case 0:
 					this.remove(_pad);
