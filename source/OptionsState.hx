@@ -96,13 +96,16 @@ class OptionsState extends MusicBeatState
 
 			switch(options[curSelected]) {
 				case 'Notes':
+                                        _virtualpad.alpha = 0;
 				 	openSubState(new NotesSubstate());
 				case 'Keyboard Controls':
+                                        _virtualpad.alpha = 0;
 					openSubState(new ControlsSubstate());
 				case 'Mobile Controls':
 					MusicBeatState.switchState(new options.CustomControlsState());					
 
 				case 'Preferences':
+                                        _virtualpad.alpha = 0;
 					openSubState(new PreferencesSubstate());									
 			}
 		}
@@ -305,6 +308,7 @@ class NotesSubstate extends MusicBeatSubstate
 					spr.alpha = 0;
 				});
 				close();
+                                _virtualpad.alpha = 1;
 			}
 			changingNote = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -498,6 +502,7 @@ class ControlsSubstate extends MusicBeatSubstate {
 				grpOptions.forEachAlive(function(spr:Alphabet) {
 					spr.alpha = 0;
 				});
+                                _virtualpad.alpha = 1;
 				close();
 				FlxG.sound.play(Paths.sound('cancelMenu'));	
 			}
@@ -871,6 +876,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
+                        _virtualpad.alpha = 1;
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));	
 		}
