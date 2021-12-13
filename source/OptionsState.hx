@@ -35,7 +35,7 @@ class OptionsState extends MusicBeatState
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
-        public static var vpadalpha:Bool = false: 		
+        public static var vpadalpha:Bool = false;		
 
 	override function create() {
 		#if desktop
