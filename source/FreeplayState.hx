@@ -159,7 +159,7 @@ class FreeplayState extends MusicBeatState
 		var textBG:FlxSprite = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
 		textBG.alpha = 0.6;
 		add(textBG);
-		#if windows
+		#if desktop
 			#if PRELOAD_ALL
 			var leText:String = "Press SPACE to listen to this Song / Press RESET to Reset your Score and Accuracy.";
 			#else
