@@ -19,7 +19,7 @@ import webm.WebmPlayer;
 
 using StringTools;
 
-class VideoState2 extends MusicBeatState
+class VideoState extends MusicBeatState
 {
 	public var leSource:String = "";
 	public var transFunction:Void->Void;
