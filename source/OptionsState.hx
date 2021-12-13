@@ -34,7 +34,8 @@ class OptionsState extends MusicBeatState
 	var options:Array<String> = ['Notes', 'Keyboard Controls', 'Mobile Controls', 'Preferences'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
-	public static var menuBG:FlxSprite;		
+	public static var menuBG:FlxSprite;
+        public static var vpadalpha:Bool = false: 		
 
 	override function create() {
 		#if desktop
@@ -75,7 +76,16 @@ class OptionsState extends MusicBeatState
 	}
 
 	override function update(elapsed:Float) {
-		super.update(elapsed);				
+		super.update(elapsed);
+
+                if (vpadalpha)
+               	{
+                    _virtualpad.alpha = 0;
+                }
+                else
+                {
+                    _virtualpad.alpha = 1;
+                }			
 
 		if (controls.UI_UP_P) {
 			changeSelection(-1);
@@ -96,16 +106,16 @@ class OptionsState extends MusicBeatState
 
 			switch(options[curSelected]) {
 				case 'Notes':
-                                        _virtualpad.alpha = 0;
+                                        vpadalpha = true;
 				 	openSubState(new NotesSubstate());
 				case 'Keyboard Controls':
-                                        _virtualpad.alpha = 0;
+                                        vpadalpha = true;
 					openSubState(new ControlsSubstate());
 				case 'Mobile Controls':
 					MusicBeatState.switchState(new options.CustomControlsState());					
 
 				case 'Preferences':
-                                        _virtualpad.alpha = 0;
+                                        vpadalpha = true;
 					openSubState(new PreferencesSubstate());									
 			}
 		}
@@ -307,8 +317,8 @@ class NotesSubstate extends MusicBeatSubstate
 				grpNotes.forEachAlive(function(spr:FlxSprite) {
 					spr.alpha = 0;
 				});
+                                OptionsState.vpadalpha = false;
 				close();
-                                _virtualpad.alpha = 1;
 			}
 			changingNote = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -502,7 +512,7 @@ class ControlsSubstate extends MusicBeatSubstate {
 				grpOptions.forEachAlive(function(spr:Alphabet) {
 					spr.alpha = 0;
 				});
-                                _virtualpad.alpha = 1;
+                                OptionsState.vpadalpha = false;
 				close();
 				FlxG.sound.play(Paths.sound('cancelMenu'));	
 			}
@@ -876,7 +886,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-                        _virtualpad.alpha = 1;
+                        OptionsState.vpadalpha = false;
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));	
 		}
