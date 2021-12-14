@@ -34,8 +34,7 @@ class OptionsState extends MusicBeatState
 	var options:Array<String> = ['Notes', 'Keyboard Controls', 'Mobile Controls', 'Preferences'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
-	public static var menuBG:FlxSprite;
-        public static var vpadalpha:Bool = false;		
+	public static var menuBG:FlxSprite;		
 
 	override function create() {
 		#if desktop
@@ -63,7 +62,7 @@ class OptionsState extends MusicBeatState
 		changeSelection();
 
 		#if mobileC
-		addVirtualPad(FULL, A_B);
+		addVirtualPad(UP_DOWN, A_B);
 		#end		
 
 		super.create();
@@ -73,19 +72,11 @@ class OptionsState extends MusicBeatState
 		super.closeSubState();
 		ClientPrefs.saveSettings();
 		changeSelection();
-	}
+                _virtualpad.alpha = 0.75;
+      	}
 
 	override function update(elapsed:Float) {
-		super.update(elapsed);
-
-                if (vpadalpha)
-               	{
-                    _virtualpad.alpha = 0;
-                }
-                else
-                {
-                    _virtualpad.alpha = 1;
-                }			
+		super.update(elapsed);		
 
 		if (controls.UI_UP_P) {
 			changeSelection(-1);
@@ -104,18 +95,17 @@ class OptionsState extends MusicBeatState
 				item.alpha = 0;
 			}
 
+                        _virtualpad.alpha = 0;
+
 			switch(options[curSelected]) {
 				case 'Notes':
-                                        vpadalpha = true;
 				 	openSubState(new NotesSubstate());
-				case 'Keyboard Controls':
-                                        vpadalpha = true;
+				case 'Keyboard Controls':                                        
 					openSubState(new ControlsSubstate());
 				case 'Mobile Controls':
 					MusicBeatState.switchState(new options.CustomControlsState());					
 
-				case 'Preferences':
-                                        vpadalpha = true;
+				case 'Preferences':                                        
 					openSubState(new PreferencesSubstate());									
 			}
 		}
@@ -316,8 +306,7 @@ class NotesSubstate extends MusicBeatSubstate
 				});
 				grpNotes.forEachAlive(function(spr:FlxSprite) {
 					spr.alpha = 0;
-				});
-                                OptionsState.vpadalpha = false;
+				});                
 				close();
 			}
 			changingNote = false;
@@ -511,8 +500,7 @@ class ControlsSubstate extends MusicBeatSubstate {
 				ClientPrefs.reloadControls();
 				grpOptions.forEachAlive(function(spr:Alphabet) {
 					spr.alpha = 0;
-				});
-                                OptionsState.vpadalpha = false;
+				});              
 				close();
 				FlxG.sound.play(Paths.sound('cancelMenu'));	
 			}
@@ -885,8 +873,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 			if(showCharacter != null) {
 				showCharacter.alpha = 0;
 			}
-			descText.alpha = 0;
-                        OptionsState.vpadalpha = false;
+			descText.alpha = 0;                        
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));	
 		}
