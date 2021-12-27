@@ -1128,25 +1128,19 @@ class PlayState extends MusicBeatState
 
 		if(foundFile) 
 		{
-			if (!runCutscene)
-		    {
-	            FlxG.switchState(new VideoState('assets/videos/' + fileName + '.webm', function()
-	            {
-	                FlxG.switchState(new PlayState());  
-	                runCutscene = true;                          
-	            }));
-		    }
-		    else
-		    {
-				if(endingSong) 
-				{
-					endSong();
-				} 
-				else 
-				{
-					startCountdown();
-				}
-		    }
+            var video = new WebmPlayerS(fileName, true);
+            video.endcallback = () -> {
+                remove(video);
+                if(endingSong) {
+                    endSong();
+                } else {
+                    startCountdown();
+                }
+            }
+            video.setGraphicSize(FlxG.width);
+            video.updateHitbox();
+            add(video);
+            video.play();
 		} 
 		else 
 		{
