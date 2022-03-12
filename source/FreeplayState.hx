@@ -89,7 +89,7 @@ class FreeplayState extends MusicBeatState
 
 		// LOAD CHARACTERS
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menuBGMagenta'));
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
@@ -167,9 +167,9 @@ class FreeplayState extends MusicBeatState
 			#end
 		#else
                         #if PRELOAD_ALL
-			var leText:String = "Press X to listen to this Song / Press Y to Reset your Score and Accuracy.";
+			var leText:String = "Aperta X pra ouvi musga / Aperta Y pra resetar teus ponto";
 			#else
-			var leText:String = "Press Y to Reset your Score and Accuracy.";
+			var leText:String = "Aperta Y pra resetar teus ponto";
 			#end			
 		#end
 		var text:FlxText = new FlxText(textBG.x, textBG.y + 4, FlxG.width, leText, 18);
@@ -227,7 +227,7 @@ class FreeplayState extends MusicBeatState
 		if (Math.abs(lerpRating - intendedRating) <= 0.01)
 			lerpRating = intendedRating;
 
-		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + Math.floor(lerpRating * 100) + '%)';
+		scoreText.text = 'Recorde Personal: ' + lerpScore + ' (' + Math.floor(lerpRating * 100) + '%)';
 		positionHighscore();
 
 		var upP = controls.UI_UP_P;
