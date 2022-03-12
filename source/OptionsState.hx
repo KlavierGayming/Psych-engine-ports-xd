@@ -726,34 +726,34 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'GAMEPLAY'
 	];
 	static var noCheckbox:Array<String> = [
-		'Framerate',
+		'FPS Limit',
 		'Note Delay',
 		'Scroll Speed',
 		'Note Size'
 	];
 
 	static var options:Array<String> = [
-		'GRAPHICS',
-		'Low Quality',
-		'Anti-Aliasing',
-		'Persistent Cached Data',
+		'Grafícos',
+		'Qualidade Baixa',
+		'Anti-Serrilhado',
+		'Data em Cache Persistente',
 		#if !html5
-		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
+		'FPS Limit', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		#end
 		'GAMEPLAY',
 		'Downscroll',
 		'Middlescroll',
-		'Ghost Tapping',
+		'Ghost Tapping aka New Input',
 		'Note Delay',
 		'Note Splashes',
-		'Note Size',
+		'Tamanho da Nota',
 		'Custom Scroll Speed',
 		'Scroll Speed',
-		'Hide HUD',
-		'Hide Song Length',
+		'Esconder HUD',
+		'Esconder a Barra de Tempo',
 		'Flashing Lights',
 		'Camera Zooms',
-		'FPS Counter'
+		'Framerate'
 
 	];
 
@@ -889,15 +889,15 @@ class PreferencesSubstate extends MusicBeatSubstate
 		if(usesCheckbox) {
 			if(controls.ACCEPT && nextAccept <= 0) {
 				switch(options[curSelected]) {
-					case 'FPS Counter':
+					case 'Framerate':
 						ClientPrefs.showFPS = !ClientPrefs.showFPS;
 						if(Main.fpsVar != null)
 							Main.fpsVar.visible = ClientPrefs.showFPS;
 
-					case 'Low Quality':
+					case 'Qualidade Baixa':
 						ClientPrefs.lowQuality = !ClientPrefs.lowQuality;
 
-					case 'Anti-Aliasing':
+					case 'Anti-Serrilhado':
 						ClientPrefs.globalAntialiasing = !ClientPrefs.globalAntialiasing;
 						showCharacter.antialiasing = ClientPrefs.globalAntialiasing;
 						for (item in grpOptions) {
@@ -929,23 +929,23 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Middlescroll':
 						ClientPrefs.middleScroll = !ClientPrefs.middleScroll;
 
-					case 'Ghost Tapping':
+					case 'Ghost Tapping aka New Input':
 						ClientPrefs.ghostTapping = !ClientPrefs.ghostTapping;
 
 					case 'Camera Zooms':
 						ClientPrefs.camZooms = !ClientPrefs.camZooms;
 
-					case 'Hide HUD':
+					case 'Esconder HUD':
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
 
 					case 'Custom Scroll Speed':
 						ClientPrefs.scroll = !ClientPrefs.scroll;
 
-					case 'Persistent Cached Data':
+					case 'Data em Cache Persistente':
 						ClientPrefs.imagesPersist = !ClientPrefs.imagesPersist;
 						FlxGraphic.defaultPersist = ClientPrefs.imagesPersist;
 					
-					case 'Hide Song Length':
+					case 'Esconder Barra de Tempo':
 						ClientPrefs.hideTime = !ClientPrefs.hideTime;
 				}
 				FlxG.sound.play(Paths.sound('scrollMenu'));
@@ -956,9 +956,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 				var add:Int = controls.UI_LEFT ? -1 : 1;
 				if(holdTime > 0.5 || controls.UI_LEFT_P || controls.UI_RIGHT_P)
 				switch(options[curSelected]) {
-					case 'Framerate':
+					case 'FPS':
 						ClientPrefs.framerate += add;
-						if(ClientPrefs.framerate < 60) ClientPrefs.framerate = 60;
+						if(ClientPrefs.framerate < 30) ClientPrefs.framerate = 30;
 						else if(ClientPrefs.framerate > 240) ClientPrefs.framerate = 240;
 
 						if(ClientPrefs.framerate > FlxG.drawFramerate) {
@@ -1018,24 +1018,24 @@ class PreferencesSubstate extends MusicBeatSubstate
 
 		var daText:String = '';
 		switch(options[curSelected]) {
-			case 'Framerate':
+			case 'FPS Limit':
 				daText = "Pretty self explanatory, isn't it?\nDefault value is 60.";
 			case 'Note Delay':
 				daText = "Changes how late a note is spawned.\nUseful for preventing audio lag from wireless earphones.";
-			case 'FPS Counter':
-				daText = "If unchecked, hides FPS Counter.";
-			case 'Low Quality':
-				daText = "If checked, disables some background details,\ndecreases loading times and improves performance.";
-			case 'Persistent Cached Data':
-				daText = "If checked, images loaded will stay in memory\nuntil the game is closed, this increases memory usage,\nbut basically makes reloading times instant.";
-			case 'Anti-Aliasing':
-				daText = "If unchecked, disables anti-aliasing, increases performance\nat the cost of the graphics not looking as smooth.";
+			case 'Framerate':
+				daText = "Se Desmarcado esconde o framerate.";
+			case 'Qualidade Baixa':
+				daText = "Se checado e...m sla macho, só sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
+			case 'Data em Cache Persistente':
+				daText = "Se Marcado teu jogo salva as imagens em cache pra rodar mais rapido";
+			case 'Anti-Serrilhado':
+				daText = "Se Desmarcado Desativa o Anti-Serrilhado, não deixa o jogo 790 fps 4k mas ajuda no fps";
 			case 'Downscroll':
-				daText = "If checked, notes go Down instead of Up, simple enough.";
+				daText = "Não precisa explicar.";
 			case 'Middlescroll':
-				daText = "If checked, hides Opponent's notes and your notes get centered.";
-			case 'Ghost Tapping':
-				daText = "If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.";
+				daText = "sai pra la jogador de osu";
+			case 'Ghost Tapping aka New Input':
+				daText = "New Input resumido";
 			case 'Swearing':
 				daText = "If unchecked, your mom won't be angry at you.";
 			case 'Violence':
@@ -1051,10 +1051,10 @@ class PreferencesSubstate extends MusicBeatSubstate
 			case 'Flashing Lights':
 				daText = "Uncheck this if you're sensitive to flashing lights!";
 			case 'Camera Zooms':
-				daText = "If unchecked, the camera won't zoom in on a beat hit.";
-			case 'Hide HUD':
-				daText = "If checked, hides most HUD elements.";
-			case 'Hide Song Length':
+				daText = "Se Desmarcado nao tem aqueles zooms oko.";
+			case 'Esconder HUD':
+				daText = "Deixa teu HUD linpim.";
+			case 'Esconder Barra de Tempo':
 				daText = "If checked, the bar showing how much time is left\nwill be hidden.";
 		}
 		descText.text = daText;
@@ -1090,7 +1090,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 			}
 		}
 
-		showCharacter.visible = (options[curSelected] == 'Anti-Aliasing');
+		showCharacter.visible = (options[curSelected] == 'Anti-Serrilhado');
 		FlxG.sound.play(Paths.sound('scrollMenu'));
 	}
 
@@ -1100,11 +1100,11 @@ class PreferencesSubstate extends MusicBeatSubstate
 			if(checkbox != null) {
 				var daValue:Bool = false;
 				switch(options[checkboxNumber[i]]) {
-					case 'FPS Counter':
+					case 'Framerate':
 						daValue = ClientPrefs.showFPS;
-					case 'Low Quality':
+					case 'Qualidade Baixa':
 						daValue = ClientPrefs.lowQuality;
-					case 'Anti-Aliasing':
+					case 'Anti-Serrilhado':
 						daValue = ClientPrefs.globalAntialiasing;
 					case 'Note Splashes':
 						daValue = ClientPrefs.noteSplashes;
@@ -1114,7 +1114,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.downScroll;
 					case 'Middlescroll':
 						daValue = ClientPrefs.middleScroll;
-					case 'Ghost Tapping':
+					case 'Ghost Tapping aka New Input':
 						daValue = ClientPrefs.ghostTapping;
 					case 'Swearing':
 						daValue = ClientPrefs.cursing;
@@ -1124,9 +1124,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.violence;
 					case 'Camera Zooms':
 						daValue = ClientPrefs.camZooms;
-					case 'Hide HUD':
+					case 'Esconder HUD':
 						daValue = ClientPrefs.hideHud;
-					case 'Persistent Cached Data':
+					case 'Data em Cache Persistente':
 						daValue = ClientPrefs.imagesPersist;
 					case 'Hide Song Length':
 						daValue = ClientPrefs.hideTime;
@@ -1139,7 +1139,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 			if(text != null) {
 				var daText:String = '';
 				switch(options[textNumber[i]]) {
-					case 'Framerate':
+					case 'FPS Limit':
 						daText = '' + ClientPrefs.framerate;
 					case 'Note Delay':
 						daText = ClientPrefs.noteOffset + 'ms';
