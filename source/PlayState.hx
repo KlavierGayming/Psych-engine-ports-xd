@@ -224,7 +224,7 @@ class PlayState extends MusicBeatState
 	public var ghostMisses:Int = 0;
 	public var scoreTxt:FlxText;
 	var timeTxt:FlxText;
-	varCreditText:FlxText;
+	var CreditText:FlxText;
 	var scoreTxtTween:FlxTween;
 
 	public static var campaignScore:Int = 0;
