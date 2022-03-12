@@ -31,7 +31,7 @@ using StringTools;
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Notes', 'Keyboard Controls', 'Mobile Controls', 'Preferences'];
+	var options:Array<String> = ['Notas', 'Controles do Tecradim', 'Controles Mobiles', 'Preferencias'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;		
@@ -41,7 +41,7 @@ class OptionsState extends MusicBeatState
 		DiscordClient.changePresence("Options Menu", null);
 		#end
 
-		menuBG = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		menuBG = new FlxSprite().loadGraphic(Paths.image('menuBbGMagenta'));
 		menuBG.color = 0xFFea71fd;
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
@@ -98,14 +98,14 @@ class OptionsState extends MusicBeatState
                         _virtualpad.alpha = 0;
 
 			switch(options[curSelected]) {
-				case 'Notes':
+				case 'Notas':
 				 	openSubState(new NotesSubstate());
-				case 'Keyboard Controls':                                        
+				case 'Controles do Tecradim':                                        
 					openSubState(new ControlsSubstate());
-				case 'Mobile Controls':
+				case 'Controles Mobiles':
 					MusicBeatState.switchState(new options.CustomControlsState());					
 
-				case 'Preferences':                                        
+				case 'Preferencias':                                        
 					openSubState(new PreferencesSubstate());									
 			}
 		}
@@ -726,7 +726,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'GAMEPLAY'
 	];
 	static var noCheckbox:Array<String> = [
-		'FPS Limit',
+		'Framerate',
 		'Note Delay',
 		'Scroll Speed',
 		'Note Size'
@@ -738,7 +738,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Anti-Serrilhado',
 		'Data em Cache Persistente',
 		#if !html5
-		'FPS Limit', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
+		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		#end
 		'GAMEPLAY',
 		'Downscroll',
@@ -753,7 +753,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Esconder a Barra de Tempo',
 		'Flashing Lights',
 		'Camera Zooms',
-		'Framerate'
+		'Contador de FPS'
 
 	];
 
@@ -889,7 +889,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		if(usesCheckbox) {
 			if(controls.ACCEPT && nextAccept <= 0) {
 				switch(options[curSelected]) {
-					case 'Framerate':
+					case 'Contador de FPS':
 						ClientPrefs.showFPS = !ClientPrefs.showFPS;
 						if(Main.fpsVar != null)
 							Main.fpsVar.visible = ClientPrefs.showFPS;
@@ -956,7 +956,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				var add:Int = controls.UI_LEFT ? -1 : 1;
 				if(holdTime > 0.5 || controls.UI_LEFT_P || controls.UI_RIGHT_P)
 				switch(options[curSelected]) {
-					case 'FPS':
+					case 'Framerate':
 						ClientPrefs.framerate += add;
 						if(ClientPrefs.framerate < 30) ClientPrefs.framerate = 30;
 						else if(ClientPrefs.framerate > 240) ClientPrefs.framerate = 240;
@@ -1018,18 +1018,18 @@ class PreferencesSubstate extends MusicBeatSubstate
 
 		var daText:String = '';
 		switch(options[curSelected]) {
-			case 'FPS Limit':
+			case 'Framerate':
 				daText = "Pretty self explanatory, isn't it?\nDefault value is 60.";
 			case 'Note Delay':
 				daText = "Changes how late a note is spawned.\nUseful for preventing audio lag from wireless earphones.";
-			case 'Framerate':
+			case 'Contador de FPS':
 				daText = "Se Desmarcado esconde o framerate.";
 			case 'Qualidade Baixa':
-				daText = "Se checado e...m sla macho, só sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
+				daText = "Se checado e...m sla macho,\nsó sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
 			case 'Data em Cache Persistente':
-				daText = "Se Marcado teu jogo salva as imagens em cache pra rodar mais rapido";
+				daText = "Se Marcado \nteu jogo salva as imagens em cache pra rodar mais rapido";
 			case 'Anti-Serrilhado':
-				daText = "Se Desmarcado Desativa o Anti-Serrilhado, não deixa o jogo 790 fps 4k mas ajuda no fps";
+				daText = "Se Desmarcado Desativa \no Anti-Serrilhado, não deixa o jogo 790 fps 4k mas ajuda no fps";
 			case 'Downscroll':
 				daText = "Não precisa explicar.";
 			case 'Middlescroll':
@@ -1051,9 +1051,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 			case 'Flashing Lights':
 				daText = "Uncheck this if you're sensitive to flashing lights!";
 			case 'Camera Zooms':
-				daText = "Se Desmarcado nao tem aqueles zooms oko.";
+				daText = "Se Desmarcado nao tem aqueles zooms loko.";
 			case 'Esconder HUD':
-				daText = "Deixa teu HUD linpim.";
+				daText = "Deixa teu HUD limpim.";
 			case 'Esconder Barra de Tempo':
 				daText = "If checked, the bar showing how much time is left\nwill be hidden.";
 		}
@@ -1139,7 +1139,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 			if(text != null) {
 				var daText:String = '';
 				switch(options[textNumber[i]]) {
-					case 'FPS Limit':
+					case 'Framerate':
 						daText = '' + ClientPrefs.framerate;
 					case 'Note Delay':
 						daText = ClientPrefs.noteOffset + 'ms';
