@@ -778,11 +778,6 @@ class PlayState extends MusicBeatState
 		strumLine.scrollFactor.set();
 
 		creditText = new FlxText(876, 648, 348);
-        creditText.text = 'FNF/Peda Engine/by Fang';
-        creditText.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, 
-        RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
-        creditText.scrollFactor.set();
-        add(creditText);
 		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 20, 400, "", 32);
 		timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		timeTxt.scrollFactor.set();
