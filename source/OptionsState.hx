@@ -722,25 +722,25 @@ class PreferencesSubstate extends MusicBeatSubstate
 {
 	private static var curSelected:Int = 0;
 	static var unselectableOptions:Array<String> = [
-		'GRAPHICS',
-		'GAMEPLAY'
+		'Graficos',
+		'Jogatina'
 	];
 	static var noCheckbox:Array<String> = [
 		'Framerate',
 		'Note Delay',
 		'Scroll Speed',
-		'Note Size'
+		'Tamanho da Nota'
 	];
 
 	static var options:Array<String> = [
-		'Grafícos',
+		'Graficos',
 		'Qualidade Baixa',
 		'Anti-Serrilhado',
 		'Data em Cache Persistente',
 		#if !html5
 		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		#end
-		'GAMEPLAY',
+		'Jogatina',
 		'Downscroll',
 		'Middlescroll',
 		'Ghost Tapping aka New Input',
@@ -751,7 +751,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Scroll Speed',
 		'Esconder HUD',
 		'Esconder a Barra de Tempo',
-		'Flashing Lights',
+		'Luzes Piscantes omg',
 		'Camera Zooms',
 		'Contador de FPS'
 
@@ -914,7 +914,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Note Splashes':
 						ClientPrefs.noteSplashes = !ClientPrefs.noteSplashes;
 
-					case 'Flashing Lights':
+					case 'Luzes Piscantes omg':
 						ClientPrefs.flashing = !ClientPrefs.flashing;
 
 					case 'Violence':
@@ -958,7 +958,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				switch(options[curSelected]) {
 					case 'Framerate':
 						ClientPrefs.framerate += add;
-						if(ClientPrefs.framerate < 30) ClientPrefs.framerate = 30;
+						if(ClientPrefs.framerate < 1) ClientPrefs.framerate = 1;
 						else if(ClientPrefs.framerate > 240) ClientPrefs.framerate = 240;
 
 						if(ClientPrefs.framerate > FlxG.drawFramerate) {
@@ -973,7 +973,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						if(ClientPrefs.speed < 0.5) ClientPrefs.speed = 0.5;
 						else if(ClientPrefs.speed > 4) ClientPrefs.speed = 4;
 
-					case 'Note Size':
+					case 'Tamanho da Nota':
 						ClientPrefs.noteSize += add/20;
 						if(ClientPrefs.noteSize < 0.5) ClientPrefs.noteSize = 0.5;
 						else if(ClientPrefs.noteSize > 1.5) ClientPrefs.noteSize = 1.5;
@@ -1019,13 +1019,13 @@ class PreferencesSubstate extends MusicBeatSubstate
 		var daText:String = '';
 		switch(options[curSelected]) {
 			case 'Framerate':
-				daText = "Pretty self explanatory, isn't it?\nDefault value is 60.";
+				daText = "Muito auto-explanatorio não é?\nO número normal é 60\nEu coloquei até 1 pra Ajudar os mobile";
 			case 'Note Delay':
-				daText = "Changes how late a note is spawned.\nUseful for preventing audio lag from wireless earphones.";
+				daText = "Muda o quão tarde a nota vai spawnar\nUtíl pra não dar lag de audío pra quem tem Fones Bluetooth";
 			case 'Contador de FPS':
 				daText = "Se Desmarcado esconde o framerate.";
 			case 'Qualidade Baixa':
-				daText = "Se checado e...m sla macho,\nsó sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
+				daText = "Se checado e... sla macho,\nsó sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
 			case 'Data em Cache Persistente':
 				daText = "Se Marcado \nteu jogo salva as imagens em cache pra rodar mais rapido";
 			case 'Anti-Serrilhado':
@@ -1040,22 +1040,22 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If unchecked, your mom won't be angry at you.";
 			case 'Violence':
 				daText = "If unchecked, you won't get disgusted as frequently.";
-			case 'Custom Scroll Speed'://for Joseph -bbpanzu
-				daText = "Leave unchecked for chart-dependent scroll speed";
+			case 'Custom Scroll Speed':
+				daText = "É Igual o Scroll Speed da Kade Engine";
 			case 'Scroll Speed':
-				daText = "Arrow speed (Custom must be enabled)";
-			case 'Note Size':
+				daText = "Velocidade da Nota (Custom tem que estar ativado)";
+			case 'Tamanho da Nota':
 				daText = "Size of notes and stuff";
 			case 'Note Splashes':
-				daText = "If unchecked, hitting \"Sick!\" notes won't show particles.";
-			case 'Flashing Lights':
-				daText = "Uncheck this if you're sensitive to flashing lights!";
+				daText = "Se desmarcado, quando cê faz um \"Sick!\" não aparece os spleshis";
+			case 'Luzes Piscantes omg':
+				daText = "Desmarca se tu tem Epilepsia";
 			case 'Camera Zooms':
 				daText = "Se Desmarcado nao tem aqueles zooms loko.";
 			case 'Esconder HUD':
 				daText = "Deixa teu HUD limpim.";
 			case 'Esconder Barra de Tempo':
-				daText = "If checked, the bar showing how much time is left\nwill be hidden.";
+				daText = "Se checado não aparece a barra de tempo";
 		}
 		descText.text = daText;
 
@@ -1108,7 +1108,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.globalAntialiasing;
 					case 'Note Splashes':
 						daValue = ClientPrefs.noteSplashes;
-					case 'Flashing Lights':
+					case 'Luzes Piscantes omg':
 						daValue = ClientPrefs.flashing;
 					case 'Downscroll':
 						daValue = ClientPrefs.downScroll;
@@ -1143,7 +1143,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daText = '' + ClientPrefs.framerate;
 					case 'Note Delay':
 						daText = ClientPrefs.noteOffset + 'ms';
-					case 'Note Size':
+					case 'Tamanho da Nota':
 						daText = FlxStringUtil.formatMoney(ClientPrefs.noteSize) + 'x';
 						if (ClientPrefs.noteSize == 0.7) daText += "(Default)";
 					case 'Scroll Speed':
