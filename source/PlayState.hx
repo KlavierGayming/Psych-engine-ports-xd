@@ -1979,9 +1979,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '? (N/A)') {
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Avaliação: ' + ratingString;
+			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Precisão: ' + ratingString;
 		} else {
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Avaliação: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
+			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
 		}
 
 		if(cpuControlled) {
