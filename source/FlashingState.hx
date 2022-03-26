@@ -24,18 +24,24 @@ class FlashingState extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Hey, watch out!\n
-			This Mod contains some flashing lights!\n
-			Press ENTER to disable them now or go to Options Menu.\n
-			Press ESCAPE to ignore this message.\n
-			You've been warned!",
+			"Epa cara!\n
+			Essa engine tem luzes piscantes.\n
+			Aperte A para desativar-las ou ir no Menu de opçoes.\n
+			Aperte B para ignorar\n
+			Você foi avisado
+			Ah e, essa engine foi originalmente\n
+			feita em cima da Psych Engine. os devidos\n
+			créditos estão no menu de créditos\n
+			essa engine foi feita para meios de entretenimento e para\n
+			pessoas com celulares ruins.\n
+			Você foi avisado Dois!",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
 
 		#if mobileC
-		addVirtualPad(NONE, A_B);
+		addVirtualPad(NONE, A_B_C);
 		#end
 	}
 
