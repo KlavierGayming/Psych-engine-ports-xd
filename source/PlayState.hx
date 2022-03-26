@@ -76,8 +76,8 @@ class PlayState extends MusicBeatState
 		['Mais ou menos (D+)', 0.69], //From 60% to 68%
 		['Nice (C-)', 0.7], //69%
 		['Boa (C+)', 0.8], //From 70% to 79%
-		['Excelente (A+)', 0.9], //From 80% to 89%
-		['Foda! (S)', 1], //From 90% to 99%
+		['Excelente (A+)', 0.80], //From 80% to 89%
+		['Foda! (S)', 0.9], //From 90% to 99%
 		['Perfeito!! (SS+)', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 	
@@ -1979,9 +1979,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '? (N/A)') {
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Precisão: ' + ratingString;
+			scoreTxt.text = 'Pontos: ' + songScore + ' // Erros: ' + songMisses + ' // Vida: ' + healthBar.percent + ' // Precisão: ' + ratingString;
 		} else {
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Erros: ' + songMisses + ' | Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
+			scoreTxt.text = 'Pontos: ' + songScore + ' // Erros: ' + songMisses + ' // Vida: ' + healthBar.percent + ' // Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
 		}
 
 		if(cpuControlled) {
@@ -1999,7 +1999,7 @@ class PlayState extends MusicBeatState
 				paused = true;
 
 				// 1 / 1000 chance for Gitaroo Man easter egg
-				if (FlxG.random.bool(0.1))
+				if (FlxG.random.bool(0.5))
 				{
 					// gitaroo man easter egg
 					cancelFadeTween();
