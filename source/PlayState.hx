@@ -226,6 +226,7 @@ class PlayState extends MusicBeatState
 	var timeTxt:FlxText;
 	var CreditText:FlxText;
 	var scoreTxtTween:FlxTween;
+	var versionTxt:FlxText;
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -903,13 +904,18 @@ class PlayState extends MusicBeatState
 		reloadHealthBarColors();
 
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
-		scoreTxt.setFormat(Paths.font("p5hatty.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		scoreTxt.setFormat(Paths.font("EurostileTBla.ttf.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Olá eu tenho skill issue", 32);
+		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString() + " | Peda Engine: v" + MainMenuState.psychEngineVersion, 16);
+			versionTxt.setFormat(Paths.font("impact.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			versionTxt.scrollFactor.set();
+			add(versionTxt);
+
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Olá eu tenho Problemas em Habilidade", 32);
 		botplayTxt.setFormat(Paths.font("impact.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
@@ -927,6 +933,7 @@ class PlayState extends MusicBeatState
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
+		versionTxt.cameras = [camOther];
 		botplayTxt.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
 		timeBarBG.cameras = [camHUD];
