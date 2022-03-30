@@ -1,9 +1,9 @@
 {
 	"song": {
 		"speed": 3.2,
-		"stage": "P1",
-		"player1": "sonic",
-		"player2": "exe",
+		"stage": "cysbg",
+		"player1": "fang",
+		"player2": "bf-blue",
 		"player3": null,
 		"events": [
 			[
@@ -312,7 +312,7 @@
 					[
 						"Change Character",
 						"BF",
-						"sonic2"
+						"fang"
 					]
 				]
 			],
