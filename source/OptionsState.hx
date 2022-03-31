@@ -754,6 +754,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Luzes Piscantes omg',
 		'Camera Zooms',
 		'Contador de FPS'
+		'Hitsounds'
 
 	];
 
@@ -938,6 +939,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Esconder HUD':
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
 
+					case 'Hitsounds':
+						ClientPrefs.hitSounds = !ClientPrefs.hitSounds;
+
 					case 'Custom Scroll Speed':
 						ClientPrefs.scroll = !ClientPrefs.scroll;
 
@@ -1056,6 +1060,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Deixa teu HUD limpim.";
 			case 'Esconder Barra de Tempo':
 				daText = "Se checado não aparece a barra de tempo";
+			case 'Hisounds':
+				daText = "Se checado tem aqueles Tap Tap\nBETA";
 		}
 		descText.text = daText;
 
