@@ -2306,13 +2306,12 @@ class PlayState extends MusicBeatState
 					callOnLuas('opponentNoteHit', [notes.members.indexOf(daNote), Math.abs(daNote.noteData), daNote.noteType, daNote.isSustainNote]);
 
 					if (!daNote.isSustainNote)
-				{
-					daNote.kill();
-					notes.remove(daNote, true);
-					daNote.destroy();
+					{
+						daNote.kill();
+						notes.remove(daNote, true);
+						daNote.destroy();
 					}
 				}
-			}
 
 				if(daNote.mustPress && cpuControlled) {
 					if(daNote.isSustainNote) {
