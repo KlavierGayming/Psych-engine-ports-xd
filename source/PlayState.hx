@@ -2310,8 +2310,6 @@ class PlayState extends MusicBeatState
 					daNote.kill();
 					notes.remove(daNote, true);
 					daNote.destroy();
-					if (ClientPrefs.hitSounds){
-						FlxG.sound.play(Paths.sound('ChartingTick'));
 					}
 				}
 			}
@@ -3491,6 +3489,8 @@ class PlayState extends MusicBeatState
 					note.kill();
 					notes.remove(note, true);
 					note.destroy();
+					if (ClientPrefs.hitSounds){
+						FlxG.sound.play(Paths.sound('ChartingTick'));
 				}
 				return;
 			}
