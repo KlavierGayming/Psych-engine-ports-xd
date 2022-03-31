@@ -4,16 +4,20 @@ All notable changes will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Não Lancado]
+## [4.7 devbuild] - 2022-30-03
 ### Mudanças
 - UI assets
 - Ratings
 - Barra de pontos diferenciadas
-- Mais acessabilidade pra quem tem 1GB
+- Mais acessabilidade pra quem tem 1GB e 2
 - Titulo com o nome da Engine
 - Menu diferente
 - Personagens animados?
 - Framerate agora é 1 KKKKKKKKKKK
+- HitSounds
+- Novo UI de combos
+- Novas Fontes
+- Confronting Yourself cover por Neném
 
 ### Consertos
 - Opçoes
