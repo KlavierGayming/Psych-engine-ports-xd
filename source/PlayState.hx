@@ -3490,6 +3490,7 @@ class PlayState extends MusicBeatState
 					note.destroy();
 					if (ClientPrefs.hitSounds){
 						FlxG.sound.play(Paths.sound('ChartingTick'));
+					}
 				}
 			}
 				return;
