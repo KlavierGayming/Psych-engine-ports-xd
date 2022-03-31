@@ -14,11 +14,11 @@ class ClientPrefs {
 	public static var flashing:Bool = true;
 	public static var globalAntialiasing:Bool = true;
 	public static var noteSplashes:Bool = true;
-	public static var lowQuality:Bool = false;
-	public static var framerate:Int = 60;
+	public static var lowQuality:Bool = true;
+	public static var framerate:Int = 30;
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
-	public static var camZooms:Bool = true;
+	public static var camZooms:Bool = false;
 	public static var hideHud:Bool = false;
 	public static var noteOffset:Int = 0;
 	public static var speed:Float = 2;
