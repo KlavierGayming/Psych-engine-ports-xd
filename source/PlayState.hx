@@ -3488,7 +3488,6 @@ class PlayState extends MusicBeatState
 					note.kill();
 					notes.remove(note, true);
 					note.destroy();
-					}
 				}
 			}
 				return;
