@@ -2310,8 +2310,6 @@ class PlayState extends MusicBeatState
 					daNote.kill();
 					notes.remove(daNote, true);
 					daNote.destroy();
-					if (ClientPrefs.hitSounds){
-						FlxG.sound.play(Paths.sound('ChartingTick'));
 					}
 				}
 			}
