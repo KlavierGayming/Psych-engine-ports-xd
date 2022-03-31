@@ -1,7 +1,7 @@
 {
 	"song": {
 		"sectionLengths": [],
-		"player1": "sonic",
+		"player1": "fang",
 		"events": [
 			[
 				14000,
@@ -309,7 +309,7 @@
 					[
 						"Change Character",
 						"BF",
-						"sonic2"
+						"fang"
 					]
 				]
 			],
@@ -455,8 +455,8 @@
 			]
 		],
 		"gfVersion": "gf",
-		"player2": "exe",
-		"notes": [
+		"player2": "bf-blue",
+		"ns": [
 			{
 				"sectionNotes": [
 					[
@@ -508,7 +508,7 @@
 						437.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"lengthInSteps": 16,
@@ -1108,25 +1108,25 @@
 						14000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						14250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						14500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						14750,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						14500,
@@ -1192,19 +1192,19 @@
 						15000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						15250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						15500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"lengthInSteps": 16,
@@ -2748,25 +2748,25 @@
 						36250,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						36250,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						36750,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						36750,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -2818,7 +2818,7 @@
 						37250,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						37062.5,
@@ -2839,7 +2839,7 @@
 						37250,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -2943,31 +2943,31 @@
 						40062.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						40625,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						40437.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						40812.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						40250,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3036,25 +3036,25 @@
 						41312.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						41687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						41875,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						41000,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3111,31 +3111,31 @@
 						42625,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						42500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						42062.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						42250,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						42875,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3203,19 +3203,19 @@
 						43125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						43000,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						43500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3272,13 +3272,13 @@
 						44437.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						44750,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3335,25 +3335,25 @@
 						45312.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						45062.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						45500,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						45750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3410,31 +3410,31 @@
 						46125,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						46312.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						46500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						46625,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						46937.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3471,31 +3471,31 @@
 						47125,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						47375,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						47687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						47562.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						47875,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3600,7 +3600,7 @@
 						52750,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3638,25 +3638,25 @@
 						53312.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						53500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						53625,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						53812.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3688,43 +3688,43 @@
 						54062.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54187.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54937.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54812.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54625,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						54250,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3746,37 +3746,37 @@
 						55312.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						55562.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						55187.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						55687.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						55875,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						55062.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3793,25 +3793,25 @@
 						56062.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						56437.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						56312.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						56750,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3859,19 +3859,19 @@
 						57375,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						57562.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						57750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						57062.5,
@@ -3882,7 +3882,7 @@
 						57062.5,
 						6,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3929,31 +3929,31 @@
 						58187.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						58375,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						58062.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						58875,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						58750,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -3980,31 +3980,31 @@
 						59187.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						59437.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						59500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						59125,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						59875,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4031,37 +4031,37 @@
 						60187.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						60625,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						60312.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						60437.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						60875,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						60937.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4109,25 +4109,25 @@
 						62000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						62250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						62500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						62750,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4144,19 +4144,19 @@
 						63000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						63250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						63500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4618,19 +4618,19 @@
 						72625,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						72000,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						72187.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4709,13 +4709,13 @@
 						73687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						73312.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4763,13 +4763,13 @@
 						74125,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						74625,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4816,13 +4816,13 @@
 						75187.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						75750,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -4923,13 +4923,13 @@
 						76062.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						76750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5029,7 +5029,7 @@
 						77562.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5066,13 +5066,13 @@
 						78312.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						78687.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5109,13 +5109,13 @@
 						79187.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						79687.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5174,13 +5174,13 @@
 						80187.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						80687.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5245,7 +5245,7 @@
 						81312.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5305,7 +5305,7 @@
 						82750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5370,7 +5370,7 @@
 						83125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5403,13 +5403,13 @@
 						84125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						84562.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5457,13 +5457,13 @@
 						85125,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						85625,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						85968.75,
@@ -5495,13 +5495,13 @@
 						86250,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						86625,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5538,13 +5538,13 @@
 						87125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						87687.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5633,13 +5633,13 @@
 						88125,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						88562.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5718,13 +5718,13 @@
 						89125,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						89687.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5772,31 +5772,31 @@
 						90000,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						90437.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						90687.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						90000,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						90000,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5843,19 +5843,19 @@
 						91187.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						91500,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						91750,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -5955,19 +5955,19 @@
 						92312.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						92687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						92062.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6068,13 +6068,13 @@
 						93375,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						93687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6111,19 +6111,19 @@
 						94062.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						94500,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						94687.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6155,19 +6155,19 @@
 						95000,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						95562.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						95750,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6189,7 +6189,7 @@
 						96500,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6211,7 +6211,7 @@
 						97500,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6238,7 +6238,7 @@
 						98500,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6265,7 +6265,7 @@
 						99500,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6292,7 +6292,7 @@
 						100500,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6314,7 +6314,7 @@
 						101500,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6341,7 +6341,7 @@
 						102500,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						102968.75,
@@ -6368,7 +6368,7 @@
 						103500,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6390,7 +6390,7 @@
 						104500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6412,7 +6412,7 @@
 						105500,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6439,7 +6439,7 @@
 						106500,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6466,7 +6466,7 @@
 						107500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6488,7 +6488,7 @@
 						108500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6505,7 +6505,7 @@
 						109500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6522,7 +6522,7 @@
 						110500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6539,19 +6539,19 @@
 						111000,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						111375,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						111750,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6583,7 +6583,7 @@
 						112437.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6615,13 +6615,13 @@
 						113437.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						113687.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6653,19 +6653,19 @@
 						114062.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						114625,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						114375,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6697,25 +6697,25 @@
 						115000,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						115250,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						115687.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						115375,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						115968.75,
@@ -6757,31 +6757,31 @@
 						116000,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						116250,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						116875,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						116687.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						116125,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6808,37 +6808,37 @@
 						117000,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						117187.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						117312.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						117500,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						117750,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						117875,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6875,43 +6875,43 @@
 						118000,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118187.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118312.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118562.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118687.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118437.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						118875,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -6938,49 +6938,49 @@
 						119000,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119125,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119187.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119250,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119375,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119500,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119687.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						119812.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7007,49 +7007,49 @@
 						120000,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120187.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120312.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120125,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120500,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120562.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120750,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						120875,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7076,61 +7076,61 @@
 						121000,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121187.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121375,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121312.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121437.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121562.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121687.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121875,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						121750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7167,67 +7167,67 @@
 						122000,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122125,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122187.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122062.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122312.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122437.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122562.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122687.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122750,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122875,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						122250,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7264,73 +7264,73 @@
 						123000,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123125,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123250,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123187.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123500,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123437.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123625,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123750,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123687.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123875,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123937.5,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						123312.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7378,25 +7378,25 @@
 						126000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						126250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						126500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						126750,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7413,19 +7413,19 @@
 						127000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						127250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						127500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7653,13 +7653,13 @@
 						132250,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						132625,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -7708,13 +7708,13 @@
 						133000,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						133625,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						133500,
@@ -7780,7 +7780,7 @@
 						134062.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -8109,19 +8109,19 @@
 						142125,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						142437.5,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						142812.5,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						142000,
@@ -8251,13 +8251,13 @@
 						144375,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						144562.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						144750,
@@ -8304,7 +8304,7 @@
 						145187.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -8336,19 +8336,19 @@
 						146437.5,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						146625,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						146000,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -8598,13 +8598,13 @@
 						150750,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						150750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -8676,13 +8676,13 @@
 						151250,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						151625,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9066,25 +9066,25 @@
 						160000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						160500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						160250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						160750,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9101,19 +9101,19 @@
 						161000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						161250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						161500,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9224,31 +9224,31 @@
 						164500,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						164250,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						164750,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						164750,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						164750,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9297,19 +9297,19 @@
 						165062.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						165562.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						165875,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9481,13 +9481,13 @@
 						167187.5,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						167687.5,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9587,13 +9587,13 @@
 						168312.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						168750,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9781,13 +9781,13 @@
 						170125,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						170375,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9830,19 +9830,19 @@
 						171250,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						171500,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						171812.5,
 						3,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -9931,13 +9931,13 @@
 						172187.5,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						172625,
 						5,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -10007,13 +10007,13 @@
 						173125,
 						4,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						173625,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -10071,13 +10071,13 @@
 						174125,
 						0,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						174625,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						174000,
@@ -10123,13 +10123,13 @@
 						175125,
 						1,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						175500,
 						2,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -10226,7 +10226,7 @@
 						176125,
 						7,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					]
 				],
 				"altAnim": false,
@@ -10316,7 +10316,7 @@
 						177250,
 						6,
 						0,
-						"phantomNotes"
+						"Hurt Note"
 					],
 					[
 						177812.5,
@@ -10345,25 +10345,25 @@
 						178000,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						178250,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						178562.5,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						178812.5,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						178000,
@@ -10390,19 +10390,19 @@
 						179125,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						179375,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						179687.5,
 						2,
 						0,
-						"AMONGUS LMAOO"
+						"Hurt Note"
 					],
 					[
 						179375,
@@ -10944,7 +10944,7 @@
 		],
 		"player3": null,
 		"song": "confronting-yourself",
-		"stage": "P1",
+		"stage": "cysbg",
 		"validScore": true,
 		"sections": 0,
 		"needsVoices": true,
