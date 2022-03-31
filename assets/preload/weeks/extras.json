@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Confronting-Yourself", "?", [146, 113, 253]],
+		["No-Sprite-Tieso", "?", [146, 113, 253]],
+		["Danoned", "?", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "",
+
+	"storyName": " ",
+	"weekBefore": "week6",
+	"weekName": "Week 1",
+	"startUnlocked": false,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}
