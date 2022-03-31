@@ -753,7 +753,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Esconder a Barra de Tempo',
 		'Luzes Piscantes omg',
 		'Camera Zooms',
-		'Contador de FPS'
+		'Contador de FPS',
 		'Hitsounds'
 
 	];
