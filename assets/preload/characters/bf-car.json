@@ -181,12 +181,12 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/BOYFRIEND",
+	"image": "characters/bfCar",
 	"position": [
 		0,
 		350
 	],
-	"healthicon": "bf",
+	"healthicon": "bf-car",
 	"flip_x": true,
 	"healthbar_colors": [
 		20,
