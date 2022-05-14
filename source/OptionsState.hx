@@ -754,7 +754,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Luzes Piscantes omg',
 		'Camera Zooms',
 		'Contador de FPS',
-		'Hitsounds'
+		'optimizedMode'
 
 	];
 
@@ -940,7 +940,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
 
 					case 'Modo 1mb Ram':
-						ClientPrefs.hitSounds = !ClientPrefs.hitSounds;
+						ClientPrefs.optimizedMode = !ClientPrefs.optimizedMode;
 
 					case 'Custom Scroll Speed':
 						ClientPrefs.scroll = !ClientPrefs.scroll;
