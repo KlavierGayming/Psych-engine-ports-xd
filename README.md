@@ -4,10 +4,10 @@ Engine pros mobile melhor que a BS
 É....
 Instala pelo source mesmo
 
-Créditos:
-# DreamStreamGT - Logo
-# Newn - Coverista
-# San - Recortador de sprites
+##Créditos:
+• DreamStreamGT - Artista da Engine
+• Newn - Coverista
+• San - Recortador de sprites
 Aviso: essa engine está em cima da Psych. Créditos aos criadores originais
 _____________________________________
 
@@ -15,9 +15,9 @@ _____________________________________
 
 ## Otimizações!
 
-# Icons Balançando
-# Engine 100% Accésivel
-# Humilde
+* Icons Balançando
+* Engine 100% Accésivel
+* Humilde
 
 ## Melhoramentos
 * Agora realmente a Engine está 100% traduzida
