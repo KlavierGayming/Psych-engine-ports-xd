@@ -4,7 +4,7 @@ Engine pros mobile melhor que a BS
 É....
 Instala pelo source mesmo
 
-##Créditos:
+## Créditos:
 • DreamStreamGT - Artista da Engine
 • Newn - Coverista
 • San - Recortador de sprites
