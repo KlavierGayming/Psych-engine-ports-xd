@@ -743,7 +743,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Jogatina',
 		'Downscroll',
 		'Middlescroll',
-		'Ghost Tapping aka New Input',
+		'Ghost Tapping',
 		'Note Delay',
 		'Note Splashes',
 		'Tamanho da Nota',
@@ -930,7 +930,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Middlescroll':
 						ClientPrefs.middleScroll = !ClientPrefs.middleScroll;
 
-					case 'Ghost Tapping aka New Input':
+					case 'Ghost Tapping':
 						ClientPrefs.ghostTapping = !ClientPrefs.ghostTapping;
 
 					case 'Camera Zooms':
@@ -939,7 +939,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Esconder HUD':
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
 
-					case 'Hitsounds':
+					case 'Modo 1mb Ram':
 						ClientPrefs.hitSounds = !ClientPrefs.hitSounds;
 
 					case 'Custom Scroll Speed':
@@ -963,7 +963,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Framerate':
 						ClientPrefs.framerate += add;
 						if(ClientPrefs.framerate < 1) ClientPrefs.framerate = 1;
-						else if(ClientPrefs.framerate > 240) ClientPrefs.framerate = 240;
+						else if(ClientPrefs.framerate > 1000) ClientPrefs.framerate = 1000;
 
 						if(ClientPrefs.framerate > FlxG.drawFramerate) {
 							FlxG.updateFramerate = ClientPrefs.framerate;
@@ -1038,7 +1038,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Não precisa explicar.";
 			case 'Middlescroll':
 				daText = "sai pra la jogador de osu";
-			case 'Ghost Tapping aka New Input':
+			case 'Ghost Tapping':
 				daText = "New Input resumido";
 			case 'Swearing':
 				daText = "If unchecked, your mom won't be angry at you.";
@@ -1060,8 +1060,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Deixa teu HUD limpim.";
 			case 'Esconder Barra de Tempo':
 				daText = "Se checado não aparece a barra de tempo";
-			case 'Hisounds':
-				daText = "Se checado tem aqueles Tap Tap\nBETA";
+			case 'Modo 1mb Ram':
+				daText = "Se checado o jogo vai ficar\nSuper Otimizado";
 		}
 		descText.text = daText;
 
@@ -1120,7 +1120,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.downScroll;
 					case 'Middlescroll':
 						daValue = ClientPrefs.middleScroll;
-					case 'Ghost Tapping aka New Input':
+					case 'Ghost Tapping':
 						daValue = ClientPrefs.ghostTapping;
 					case 'Swearing':
 						daValue = ClientPrefs.cursing;
