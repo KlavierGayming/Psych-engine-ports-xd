@@ -8,7 +8,7 @@ import Controls;
 
 class ClientPrefs {
 	public static var downScroll:Bool = false;
-	public static var hitSounds:Bool = true;
+	public static var 1mbram:Bool = false;
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
 	public static var flashing:Bool = true;
