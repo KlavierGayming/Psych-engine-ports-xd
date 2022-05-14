@@ -57,6 +57,7 @@ class ClientPrefs {
 
 	public static function saveSettings() {
 		FlxG.save.data.downScroll = downScroll;
+		FlxG.save.data.downScroll = optimizedMode;
 		FlxG.save.data.middleScroll = middleScroll;
 		FlxG.save.data.showFPS = showFPS;
 		FlxG.save.data.flashing = flashing;
@@ -90,6 +91,9 @@ class ClientPrefs {
 	public static function loadPrefs() {
 		if(FlxG.save.data.downScroll != null) {
 			downScroll = FlxG.save.data.downScroll;
+		}
+		if(FlxG.save.data.l != null) {
+			optimizedMode = FlxG.save.data.optimizedMode;
 		}
 		if(FlxG.save.data.middleScroll != null) {
 			middleScroll = FlxG.save.data.middleScroll;
