@@ -1,2 +1,0 @@
-Switches the notes' scrolling from downscroll to upscroll, and vice versa.
-Only works on recent Psych Engine builds.
