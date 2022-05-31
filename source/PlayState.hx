@@ -1,6 +1,6 @@
 package;
 
-#if desktop
+#if android
 import Discord.DiscordClient;
 #end
 import Section.SwagSection;
@@ -241,7 +241,7 @@ class PlayState extends MusicBeatState
 	public var inCutscene:Bool = false;
 	var songLength:Float = 0;
 
-	#if desktop
+	#if android
 	// Discord RPC variables
 	var storyDifficultyText:String = "";
 	var detailsText:String = "";
@@ -1058,7 +1058,7 @@ class PlayState extends MusicBeatState
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
 
-		#if desktop
+		#if android
 		// Updating Discord Rich Presence.
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 		#end
@@ -1484,7 +1484,7 @@ class PlayState extends MusicBeatState
 		FlxTween.tween(timeBar, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 		FlxTween.tween(timeTxt, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 		
-		#if desktop
+		#if android
 		// Updating Discord Rich Presence (with Time Left)
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
 		#end
@@ -2022,7 +2022,7 @@ class PlayState extends MusicBeatState
 					openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 				}
 			
-				#if desktop
+				#if android
 				DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 				#end
 			}
@@ -2036,7 +2036,7 @@ class PlayState extends MusicBeatState
 			CustomFadeTransition.nextCamera = camOther;
 			MusicBeatState.switchState(new ChartingState());
 
-			#if desktop
+			#if android
 			DiscordClient.changePresence("Chart Editor", null, null, true);
 			#end
 		}
@@ -2430,7 +2430,7 @@ class PlayState extends MusicBeatState
 
 				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 				
-				#if desktop
+				#if android
 				// Game Over doesn't get his own variable because it's only used here
 				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 				#end
@@ -2784,6 +2784,30 @@ class PlayState extends MusicBeatState
 			
 			case 'BG Freaks Expression':
 				if(bgGirls != null) bgGirls.swapDanceType();
+			
+			case 'Change Scroll Speed':
+				if (songSpeedType == "constant")
+					return;
+				var val1:Float = Std.parseFloat(value1);
+				var val2:Float = Std.parseFloat(value2);
+				if(Math.isNaN(val1)) val1 = 1;
+				if(Math.isNaN(val2)) val2 = 0;
+
+				var newValue:Float = SONG.speed * ClientPrefs.getGameplaySetting('scrollspeed', 1) * val1;
+
+				if(val2 <= 0)
+				{
+					songSpeed = newValue;
+				}
+				else
+				{
+					songSpeedTween = FlxTween.tween(this, {songSpeed: newValue}, val2, {ease: FlxEase.linear, onComplete:
+						function (twn:FlxTween)
+						{
+							songSpeedTween = null;
+						}
+					});
+				}
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
