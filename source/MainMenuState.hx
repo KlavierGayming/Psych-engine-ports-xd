@@ -1,6 +1,6 @@
 package;
 
-#if desktop
+#if android
 import Discord.DiscordClient;
 #end
 import flixel.FlxG;
@@ -25,7 +25,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.4.2'; //This is also used for Discord RPC
-	public static var pedaEngineVersion:String = '0.4.7';
+	public static var pedaEngineVersion:String = '0.5.0';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -40,7 +40,7 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		#if desktop
+		#if android
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
