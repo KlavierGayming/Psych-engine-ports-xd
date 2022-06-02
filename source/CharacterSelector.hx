@@ -11,7 +11,7 @@ import flixel.effects.FlxFlicker;
 import flixel.group.FlxGroup.FlxTypedGroup;
 
 class CharSelectState extends MusicBeatState{
-    var charsArray:Array<String> = ['BOYFRIEND', 'BF-CAR'];
+    var charsArray:Array<String> = ['BOYFRIEND', 'BF-CAR', 'BF-NEO];
     var leBG:FlxSprite;
     var bf:FlxSprite;
     var bfcar:FlxSprite;
