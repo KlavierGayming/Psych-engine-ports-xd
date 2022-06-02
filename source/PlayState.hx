@@ -260,7 +260,7 @@ class PlayState extends MusicBeatState
 	var boyfriendIdled:Bool = false;
 
     //Character Selector
-	var charSelection:Int = CharSelectState.curSelected;
+	var charSelection:Int = CharacterSelector.curSelected;
 
 	// Lua shit
 	private var luaDebugGroup:FlxTypedGroup<DebugLuaText>;
