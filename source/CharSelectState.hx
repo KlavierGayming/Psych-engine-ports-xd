@@ -11,10 +11,12 @@ import flixel.effects.FlxFlicker;
 import flixel.group.FlxGroup.FlxTypedGroup;
 
 class CharSelectState extends MusicBeatState{
-    var charsArray:Array<String> = ['BOYFRIEND', 'BF-CAR', 'BF-NEO'];
+    var charsArray:Array<String> = ['BOYFRIEND', 'BF-CAR', 'BF-NEO', 'FANG'];
     var leBG:FlxSprite;
     var bf:FlxSprite;
     var bfcar:FlxSprite;
+    var bfneo:FlxSprite;
+    var fang:FlxSprite;
     var selectedText:FlxText;
     var charSelect:FlxSprite;
     public static var curSelected:Int = 0;
@@ -41,13 +43,21 @@ class CharSelectState extends MusicBeatState{
         bfneo.frames = Paths.getSparrowAtlas('characters/bfNeo');
         bfneo.animation.addByPrefix('idle', 'BF idle dance', 24, true);
         bfneo.animation.addByPrefix('hey', 'BF HEY!!', 24, true);
+        bfneo.animation.addByPrefix('singUP', 'BF NOTE UP', 24, true);
         bfneo.animation.play('idle');
-        add(bfneo);
+        add(bfneo);   
+        fang = new FlxSprite(450, 300).loadGraphic(Paths.image('characters/fang'));
+        fang.frames = Paths.getSparrowAtlas('characters/fang');
+        fang.animation.addByPrefix('idle', 'BF idle dance', 24, true);
+        fang.animation.addByPrefix('hey', 'BF HEY!!', 24, true);
+        fang.animation.addByPrefix('singUP', 'BF NOTE UP', 24, true);
+        fang.animation.play('idle');
+        add(fang);   
 		selectedText = new FlxText(0, 10, charsArray[0], 24);
 		selectedText.alpha = 0.5;
 		selectedText.x = (FlxG.width) - (selectedText.width) - 25;
         add(selectedText);
-        charSelect = new Alphabet(0, 50, "Select Your Character", true, false);
+        charSelect = new Alphabet(0, 50, "Selecione seu Personagem!", true, false);
         charSelect.offset.x -= 150;
         add(charSelect);
         changeSelection();
@@ -69,21 +79,32 @@ class CharSelectState extends MusicBeatState{
         bf.visible = true;
         bfcar.visible = false;
         bfneo.visible = false;
+        fang.visible = false;
         FlxTween.color(leBG, 2, leBG.color, FlxColor.BLUE, {onComplete:function(twn:FlxTween){
         FlxTween.cancelTweensOf(leBG);
         }});
         case 1:
         bf.visible = false;
         bfcar.visible = true;
-        bfneo.visible = false
+        bfneo.visible = false;
+        fang.visible = false;
         FlxTween.color(leBG, 2, leBG.color, FlxColor.RED, {onComplete:function(twn:FlxTween){
         FlxTween.cancelTweensOf(leBG);
         }});
         case 2:
         bf.visible = false;
         bfcar.visible = false;
-        bfneo.visible = true
-        FlxTween.color(leBG, 3, leBG.color, FlxColor.GREEN, {onComplete:function(twn:FlxTween){
+        bfneo.visible = true;
+        fang.visible = false;
+        FlxTween.color(leBG, 2, leBG.color, FlxColor.BLUE, {onComplete:function(twn:FlxTween){
+        FlxTween.cancelTweensOf(leBG);
+        }});
+        case 3:
+        bf.visible = false;
+        bfcar.visible = false;
+        bfneo.visible = false;
+        fang.visible = true;
+        FlxTween.color(leBG, 2, leBG.color, FlxColor.BLUE, {onComplete:function(twn:FlxTween){
         FlxTween.cancelTweensOf(leBG);
         }});
         }
@@ -101,6 +122,9 @@ class CharSelectState extends MusicBeatState{
         if (controls.ACCEPT){
         FlxG.sound.play(Paths.sound('confirmMenu'));
         switch(curSelected){
+        case 3:
+        FlxFlicker.flicker(fang, 1.5, 0.15, false);
+        fang.animation.play('singUP');
         case 2:
         FlxFlicker.flicker(bfneo, 1.5, 0.15, false);
         bfneo.animation.play('singUP');
@@ -109,7 +133,7 @@ class CharSelectState extends MusicBeatState{
         bfcar.animation.play('singUP');
         case 0:
         FlxFlicker.flicker(bf, 1.5, 0.15, false);
-        bf.animation.play('hey');
+        bf.animation.play('singUP');
         }
         new FlxTimer().start(1.5, function(tmr:FlxTimer)
             {
