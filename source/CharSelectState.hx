@@ -41,7 +41,7 @@ class CharSelectState extends MusicBeatState{
         bfneo.frames = Paths.getSparrowAtlas('characters/bfNeo');
         bfneo.animation.addByPrefix('idle', 'BF idle dance', 24, true);
         bfneo.animation.addByPrefix('hey', 'BF HEY!!', 24, true);
-        bfneo.animation.('idle');
+        bfneo.animation.play('idle');
         add(bfneo);
 		selectedText = new FlxText(0, 10, charsArray[0], 24);
 		selectedText.alpha = 0.5;
