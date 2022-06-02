@@ -1,0 +1,144 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Pico Idle Dance"
+		},
+		{
+			"offsets": [
+				-54,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "pico Up note0"
+		},
+		{
+			"offsets": [
+				69,
+				-82
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pico Down Note0"
+		},
+		{
+			"offsets": [
+				67,
+				-35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Pico Down Note MISS"
+		},
+		{
+			"offsets": [
+				-53,
+				57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "pico Up note miss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico Note Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				56,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				48
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Pico Note Right Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				25
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Pico NOTE LEFT miss",
+			"indices": []
+		},
+		{
+			"offsets": [
+				292,
+				42
+			],
+			"loop": false,
+			"fps": 21,
+			"anim": "shoot",
+			"indices": [],
+			"name": "Pico Shoot"
+		},
+		{
+			"offsets": [
+				178,
+				3
+			],
+			"loop": false,
+			"fps": 50,
+			"anim": "reload",
+			"indices": [],
+			"name": "Pico Gun Charge"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/pico_christmas",
+	"position": [
+		0,
+		300
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		220,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
