@@ -69,7 +69,7 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['Tu é Lixo! (Redacted)', 0.2], //From 0% to 19%
+		['Tu é um Merda! (Redacted)', 0.2], //From 0% to 19%
 		['Merda (FF-)', 0.4], //From 20% to 39%
 		['Ruim (F-)', 0.5], //From 40% to 49%
 		['Bruh (D-)', 0.6], //From 50% to 59%
@@ -184,7 +184,7 @@ class PlayState extends MusicBeatState
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
-	var dialogue:Array<String> = ['eu dei o cu', 'coloca o texto aqui uwu'];
+	var dialogue:Array<String> = ['eu dei o cu uwu', 'coloca o texto aqui uwu'];
 	var dialogueJson:DialogueFile = null;
 
 	var halloweenBG:BGSprite;
