@@ -302,7 +302,7 @@ class FreeplayState extends MusicBeatState
 			if(colorTween != null) {
 				colorTween.cancel();
 			}
-			if (FlxG.keys.pressed.SHIFT #if mobileC || _virtualpad.buttonC.justPressed #end){
+			if (FlxG.keys.pressed.SHIFT){
 				LoadingState.loadAndSwitchState(new ChartingState());
 			}else{
 				LoadingState.loadAndSwitchState(new CharSelectState());
