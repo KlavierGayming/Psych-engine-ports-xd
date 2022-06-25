@@ -25,7 +25,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.4.2'; //This is also used for Discord RPC
-	public static var pedaEngineVersion:String = '0.5.1';
+	public static var pedaEngineVersion:String = '0.5.0';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -138,13 +138,80 @@ class MainMenuState extends MusicBeatState
 		}
 		#end
 
+
 		#if mobileC
 		addVirtualPad(UP_DOWN, A_B_C);
 		#end
 
-		super.create();
-	}
+    super.create();
 
+		switch (FlxG.random.int(1, 6))
+            {
+            case 1:
+			char = new FlxSprite(820, 170).loadGraphic(Paths.image('menuchar/bf'));
+			char.frames = Paths.getSparrowAtlas('menuchar/bf');
+			char.scrollFactor.set();
+			FlxG.sound.play(Paths.sound('confirmMenu'), 2);
+			char.flipX = true;
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			add(char);
+
+            case 2:
+			char = new FlxSprite(790, 200).loadGraphic(Paths.image('mainmenu/BOYFRIEND_Run'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/BOYFRIEND_Run');
+			char.animation.addByPrefix('idleB', 'BF idle dance', 24, true);
+			char.animation.play('idleB');
+			char.scrollFactor.set();
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			add(char);
+              
+			case 3:
+			char = new FlxSprite(810, 120).loadGraphic(Paths.image('mainmenu/sans_assets'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/sans_assets');
+			char.animation.addByPrefix('idleS', 'SANS Idle', 24, true);
+			char.animation.play('idleS');
+			char.scrollFactor.set();
+			char.flipX = true;
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			add(char);
+
+			case 4:
+			char = new FlxSprite(650, 130).loadGraphic(Paths.image('mainmenu/Glitched'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/Glitched');
+			char.animation.addByPrefix('idleG', 'idle???', 24, true);
+			char.animation.play('idleG');
+			char.scrollFactor.set();
+			char.flipX = true;
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			FlxG.sound.play(Paths.sound('miaou'), 2);
+			add(char);
+		
+			case 5:
+			char = new FlxSprite(700, 130).loadGraphic(Paths.image('mainmenu/hellron-drippin'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/hellron-drippin');
+			char.animation.addByPrefix('idleRD', 'idle instance', 24, true);
+			char.animation.play('idleRD');
+			char.scrollFactor.set();
+			char.flipX = true;
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			FlxG.sound.play(Paths.sound('SUS'), 2);
+			add(char);
+
+			case 6:
+			char = new FlxSprite(790, 190).loadGraphic(Paths.image('mainmenu/Sans_Gold'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/Sans_Gold');
+			char.animation.addByPrefix('idleSG', 'Silver Idle', 24, true);
+			char.animation.play('idleSG');
+			char.scrollFactor.set();
+			FlxG.sound.play(Paths.sound('error'), 2);
+			char.antialiasing = ClientPrefs.globalAntialiasing;
+			background.color = FlxColor.BLACK;
+			bgScroll.color = FlxColor.BLACK;
+			background2.color = FlxColor.BLACK;
+			add(char);
+		}
+
+	}
 	#if ACHIEVEMENTS_ALLOWED
 	// Unlocks "Freaky on a Friday Night" achievement
 	function giveAchievement() {
