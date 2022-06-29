@@ -184,7 +184,7 @@ class PlayState extends MusicBeatState
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
-	var dialogue:Array<String> = ['eu dei o cu uwu', 'coloca o texto aqui uwu'];
+	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
 
 	var halloweenBG:BGSprite;
@@ -930,7 +930,7 @@ class PlayState extends MusicBeatState
 			versionName.scrollFactor.set();
 			add(versionName);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Olá eu tenho Problemas em Habilidade", 32);
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Ola galerinha eu estou mostrando essa engine linda", 32);
 		botplayTxt.setFormat(Paths.font("impact.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
