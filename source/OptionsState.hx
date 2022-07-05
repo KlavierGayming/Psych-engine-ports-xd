@@ -737,6 +737,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Qualidade Baixa',
 		'Anti-Serrilhado',
 		'Data em Cache Persistente',
+		'Remover GF',
+		'Remover BG (teste)',
 		#if !html5
 		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		#end
@@ -911,6 +913,12 @@ class PreferencesSubstate extends MusicBeatSubstate
 							}
 						}
 						OptionsState.menuBG.antialiasing = ClientPrefs.globalAntialiasing;
+					
+					case 'Remover GF':
+						ClientPrefs.optimizedMode = !ClientPrefs.optimizedMode;
+				
+					case 'Remover BG (teste)':
+						ClientPrefs.cenoptim = !ClientPrefs.cenoptim
 
 					case 'Note Splashes':
 						ClientPrefs.noteSplashes = !ClientPrefs.noteSplashes;
@@ -938,9 +946,6 @@ class PreferencesSubstate extends MusicBeatSubstate
 
 					case 'Esconder HUD':
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
-
-					case 'Modo 1mb Ram':
-						ClientPrefs.optimizedMode = !ClientPrefs.optimizedMode;
 
 					case 'Custom Scroll Speed':
 						ClientPrefs.scroll = !ClientPrefs.scroll;
@@ -1028,6 +1033,10 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Muda o quão tarde a nota vai spawnar\nUtíl pra não dar lag de audío pra quem tem Fones Bluetooth";
 			case 'Contador de FPS':
 				daText = "Se Desmarcado esconde o framerate.";
+			case 'Remover GF':
+				daText = "otimização";
+			case 'Remover BG (teste)':
+				daText = "otimização";	
 			case 'Qualidade Baixa':
 				daText = "Se checado e... sla macho,\nsó sei que esconde a maioria dos objetos inuteis, fazendo o jogo roda liso";
 			case 'Data em Cache Persistente':
@@ -1060,8 +1069,6 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Deixa teu HUD limpim.";
 			case 'Esconder Barra de Tempo':
 				daText = "Se checado não aparece a barra de tempo";
-			case 'Modo 1mb Ram':
-				daText = "Se checado o jogo vai ficar\nSuper Otimizado";
 		}
 		descText.text = daText;
 
@@ -1110,6 +1117,10 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.showFPS;
 					case 'Qualidade Baixa':
 						daValue = ClientPrefs.lowQuality;
+					case 'Remover GF':
+						daValue = ClientPrefs.optimizedMode;
+					case 'Remover BG (teste)':
+						daValue = ClientPrefs.cenoptim;
 					case 'Anti-Serrilhado':
 						daValue = ClientPrefs.globalAntialiasing;
 					case 'Note Splashes':
