@@ -9,7 +9,6 @@ import Controls;
 class ClientPrefs {
 	public static var downScroll:Bool = false;
 	public static var optimizedMode:Bool = false;
-	public static var cenoptim:Bool = true;
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
 	public static var flashing:Bool = true;
@@ -59,7 +58,6 @@ class ClientPrefs {
 	public static function saveSettings() {
 		FlxG.save.data.downScroll = downScroll;
 		FlxG.save.data.optimizedMode = optimizedMode;
-		FlxG.save.data.cenoptim = cenoptim;
 		FlxG.save.data.middleScroll = middleScroll;
 		FlxG.save.data.showFPS = showFPS;
 		FlxG.save.data.flashing = flashing;
@@ -94,11 +92,8 @@ class ClientPrefs {
 		if(FlxG.save.data.downScroll != null) {
 			downScroll = FlxG.save.data.downScroll;
 		}
-		if(FlxG.save.data.optimizedMode != null) {
+		if(FlxG.save.data.l != null) {
 			optimizedMode = FlxG.save.data.optimizedMode;
-		}
-		if(FlxG.save.data.cenoptim != null) {
-			cenoptim = FlxG.save.data.cenoptim;
 		}
 		if(FlxG.save.data.middleScroll != null) {
 			middleScroll = FlxG.save.data.middleScroll;
